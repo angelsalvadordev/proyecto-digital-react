@@ -1,0 +1,40 @@
+// CSS variables
+:root {
+    // Colors
+    --color-primary: hsla(234, 88.5%, 65.3%,1);
+    --color-secondary: hsla(205, 100%, 71%,1);
+    --color-tertiary: hsla(0, 0%, 34%,1);
+    --color-dark: hsla(233, 80.2%, 13.3%,1);
+    --color-light: hsla(0, 0%, 100%,1);
+  
+    //z-index
+    --z-back: -10;
+    --z-normal: 1;
+    --z-tooltip: 10;
+    --z-fixed: 100;
+    --z-modal: 1000;
+}
+
+
+// SASS variables
+    // Colors
+    $color-first: hsla(234, 88.5%, 65.3%,1);
+    $color-second: hsla(205, 100%, 71%,1);
+    $color-dark: hsla(233, 80.2%, 13.3%,1);
+    $color-light: hsla(0, 0%, 100%,1);
+    
+    //z-index
+    $z-back: -10;
+    $z-normal: 1;
+    $z-tooltip: 10;
+    $z-fixed: 100;
+    $z-modal: 1000;
+
+    // Breakpoints
+    $breakpoints: (
+        m: 320px,
+        t: 768px,
+        l: 1024px,
+        d: 1200px,
+    );
+

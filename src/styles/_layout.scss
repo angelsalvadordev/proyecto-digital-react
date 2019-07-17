@@ -1,0 +1,32 @@
+.container{
+    width: 100%;
+}
+
+.section{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.grid{
+    display: grid;
+}
+
+.flex{
+    display: flex;
+}
+
+.flex-column{
+    flex-direction: column;
+}
+
+.flex-row{
+    flex-direction: row;
+}
+
+.justify-content-center{
+   justify-content: center;
+}
+
+.align-items-center{
+    align-items: center
+}

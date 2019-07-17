@@ -1,0 +1,165 @@
+:root {
+  --color-primary: hsla(234, 88.5%, 65.3%,1);
+  --color-secondary: hsla(205, 100%, 71%,1);
+  --color-tertiary: hsla(0, 0%, 34%,1);
+  --color-dark: hsla(233, 80.2%, 13.3%,1);
+  --color-light: hsla(0, 0%, 100%,1);
+  --z-back: -10;
+  --z-normal: 1;
+  --z-tooltip: 10;
+  --z-fixed: 100;
+  --z-modal: 1000; }
+
+@font-face {
+  font-family: 'MaterialIcon';
+  src: url("../fonts/material-icon/MaterialIcons-Regular.ttf") format("truetype"), url("../fonts/material-icon/MaterialIcons-Regular.woff") format("woff"), url("../fonts/material-icon/MaterialIcons-Regular.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Pattaya-web';
+  src: url("../fonts/pattaya/Pattaya-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Poppins-web Regular';
+  src: url("../fonts/poppins/Poppins-Regular.ttf") format("truetype"), url("../fonts/poppins/Poppins-Regular.woff") format("woff"), url("../fonts/poppins/Poppins-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Poppins-web Italic';
+  src: url("../fonts/poppins/Poppins-RegularItalic.ttf") format("truetype"), url("../fonts/poppins/Poppins-Italic.woff") format("woff"), url("../fonts/poppins/Poppins-Italic.woff2") format("woff2");
+  font-weight: 400;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'Poppins-web Bold';
+  src: url("../fonts/poppins/Poppins-Bold.ttf") format("truetype"), url("../fonts/poppins/Poppins-Bold.woff") format("woff"), url("../fonts/poppins/Poppins-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: italic; }
+
+.f-icon {
+  font-family: 'MaterialIcon'; }
+
+.f-pattaya {
+  font-family: 'Pattaya-web'; }
+
+.f-poppins-r {
+  font-family: 'Poppins-web Regular'; }
+
+.f-poppins-i {
+  font-family: 'Poppins-web Italic'; }
+
+.f-poppins-b {
+  font-family: 'Poppins-web Bold'; }
+
+.f-40 {
+  font-size: 2.5rem; }
+
+.f-35 {
+  font-size: 2.18rem; }
+
+.f-30 {
+  font-size: 1.87rem; }
+
+.f-20 {
+  font-size: 1.25rem; }
+
+.f-16 {
+  font-size: 1rem; }
+
+.f-14 {
+  font-size: 0.87rem; }
+
+.f-13 {
+  font-size: 0.81rem; }
+
+.f-12 {
+  font-size: 0.75rem; }
+
+.text-center {
+  text-align: center; }
+
+.bg-primary {
+  background-color: var(--color-primary); }
+
+.bg-secondary {
+  background-color: var(--color-secondary); }
+
+.bg-tertiary {
+  background-color: var(--color-tertiary); }
+
+.bg-dark {
+  background-color: var(--color-dark); }
+
+.bg-light {
+  background-color: var(--color-light); }
+
+.f-primary {
+  color: var(--color-primary); }
+
+.f-secondary {
+  color: var(--color-secondary); }
+
+.f-tertiary {
+  color: var(--color-tertiary); }
+
+.f-dark {
+  color: var(--color-dark); }
+
+.f-light {
+  color: var(--color-light); }
+
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+html {
+  font-family: 'Poppins-web Regular';
+  font-size: 1rem;
+  color: var(--color-tertiary); }
+
+body {
+  background-color: var(--color-light); }
+
+img {
+  width: 100%;
+  height: auto; }
+
+ul {
+  list-style: none; }
+
+a {
+  color: var(--color-light);
+  text-decoration: none; }
+
+.outline {
+  outline: 2px solid red; }
+
+.container {
+  width: 100%; }
+
+.section {
+  margin-left: auto;
+  margin-right: auto; }
+
+.grid {
+  display: grid; }
+
+.flex {
+  display: flex; }
+
+.flex-column {
+  flex-direction: column; }
+
+.flex-row {
+  flex-direction: row; }
+
+.justify-content-center {
+  justify-content: center; }
+
+.align-items-center {
+  align-items: center; }
