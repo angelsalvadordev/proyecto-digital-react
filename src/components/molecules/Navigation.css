@@ -1,19 +1,27 @@
 .main-navigation {
   justify-content: space-between;
   padding: 5px 10px;
-  position: relative; }
+  position: relative;
+  transition: background .5s; }
 
 .main-menu {
   position: absolute;
   width: 100%;
-  height: 270px;
+  height: 0;
   top: 100%;
-  left: 0; }
+  left: 0;
+  display: flex;
+  overflow: hidden;
+  transition: height .5s; }
+
+.show-menu {
+  height: 270px; }
 
 .social {
   order: 2;
   width: 120px;
-  margin: 10px auto 0 auto; }
+  margin: 15px auto 0 auto;
+  justify-content: space-between; }
   .social__icon {
     display: block;
     width: 22px;
@@ -21,16 +29,15 @@
 
 .menu {
   width: 100%;
-  order: 1;
-  padding: 15px 0 0 0; }
+  order: 1; }
   .menu__item {
     display: flex;
     justify-content: center;
-    padding: 5px 0;
+    padding: 0 0 10px 0;
     margin: 0 auto;
     width: 246px; }
     .menu__item:last-child {
-      padding-bottom: 10px;
+      padding-bottom: 12px;
       border-bottom: 1px solid var(--color-light); }
   .menu__link {
     text-transform: uppercase; }
