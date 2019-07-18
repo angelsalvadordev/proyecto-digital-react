@@ -48,13 +48,16 @@
   font-weight: 400; }
 
 .f-poppins-r {
-  font-family: 'Poppins-web Regular'; }
+  font-family: 'Poppins-web Regular';
+  font-weight: 400; }
 
 .f-poppins-i {
-  font-family: 'Poppins-web Italic'; }
+  font-family: 'Poppins-web Italic';
+  font-style: italic; }
 
 .f-poppins-b {
-  font-family: 'Poppins-web Bold'; }
+  font-family: 'Poppins-web Bold';
+  font-weight: 700; }
 
 .f-40 {
   font-size: 2.5rem; }
@@ -64,6 +67,9 @@
 
 .f-30 {
   font-size: 1.87rem; }
+
+.f-24 {
+  font-size: 1.5rem; }
 
 .f-20 {
   font-size: 1.25rem; }
@@ -120,6 +126,7 @@
 
 html {
   font-family: 'Poppins-web Regular';
+  font-weight: 400;
   font-size: 1rem;
   color: var(--color-tertiary); }
 
@@ -141,7 +148,9 @@ a {
   outline: 2px solid red; }
 
 .container {
-  width: 100%; }
+  width: 100%;
+  padding-left: 12px;
+  padding-right: 12px; }
 
 .section {
   margin-left: auto;

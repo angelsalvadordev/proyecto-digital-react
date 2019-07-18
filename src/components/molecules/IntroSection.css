@@ -1,0 +1,6 @@
+.intro-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .intro-section__parag {
+    text-align: center; }

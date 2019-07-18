@@ -1,0 +1,35 @@
+.card-testimony {
+  margin-top: 48px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 292px;
+  justify-content: space-between; }
+  .card-testimony__bg {
+    border-radius: 10px;
+    width: 247px;
+    padding: 12px 22px;
+    position: relative; }
+    .card-testimony__bg::before {
+      content: '';
+      background-color: var(--color-light);
+      width: 30px;
+      height: 38px;
+      position: absolute;
+      top: 64px;
+      left: -30px;
+      clip-path: polygon(0% 0%, 100% 0, 100% 100%); }
+  .card-testimony__image {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-top: 18px; }
+
+.stars-testimony {
+  display: flex;
+  margin-top: 6px; }
+
+.star-testimony {
+  width: 20px;
+  height: 21px;
+  display: block; }

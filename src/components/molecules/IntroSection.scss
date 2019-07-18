@@ -1,0 +1,13 @@
+.intro-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__title{
+
+    }
+
+    &__parag{
+      text-align: center;
+    }
+}

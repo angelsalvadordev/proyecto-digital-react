@@ -1,6 +1,10 @@
 import React, { Component } from 'react'
-import './styles.css'
-import NavHero from '../organisms/NavHero';
+import './Home.css'
+import Navigation from '../organisms/Navigation'
+import Hero from '../organisms/Hero';
+import Services from '../organisms/Services'
+import Testimonies from '../organisms/Testimonies'
+import Portfolio from '../organisms/Portfolio';
 
 class Home extends Component {
     render() {
@@ -8,14 +12,25 @@ class Home extends Component {
             <>
                 <header className="container main-header">
                     <div className="section">
-                        <NavHero />
+                        <Navigation />
+                        <Hero />
                     </div>
                 </header>
-                <main>
-
+                <main className="container main-content">
+                    <section className="section main-services">
+                        <Services />
+                    </section>
+                    <section className="section main-testimonies bg-primary">
+                        <Testimonies />
+                    </section>
+                    <section className="section main-portfolio">
+                        <Portfolio />
+                    </section>
                 </main>
-                <footer>
+                <footer className="container">
+                    <section className="section main-footer">
 
+                    </section>
                 </footer>
             </>
         )
