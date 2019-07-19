@@ -1,8 +1,7 @@
 import React, { Component } from 'react'
-import './Navigation.css'
 import Logo from '../atoms/Logo';
-import Menu from '../molecules/Menu';
 import Burger from '../atoms/Burger';
+import Menu from '../molecules/Menu';
 
 class Navigation extends Component {
 

@@ -1,0 +1,15 @@
+.main-navigation{
+    justify-content: space-between;
+    padding: 5px 10px;
+    position: relative;
+    transition: background .5s;
+    outline: 1px solid red;
+
+    @include from(laptop){
+        padding:40px 34px;
+    }
+    
+    @include from(desktop){
+        padding: 40px 0;
+    }
+}

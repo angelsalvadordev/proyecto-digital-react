@@ -1,9 +1,15 @@
 
-@import './variables';
 @import './mixins';
+@import './variables';
 
 @import './typography';
 @import './colors';
 
 @import './reset';
 @import './layout';
+
+// Import style components
+@import "../components/atoms/all";
+@import "../components/molecules/all";
+@import "../components/organisms/all";
+@import "../components/pages/all";

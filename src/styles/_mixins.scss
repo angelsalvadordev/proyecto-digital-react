@@ -1,3 +1,16 @@
+// Transform PX to REM
+
+@function fontSizeRem($size){
+  $toRem: $size / 16px;
+  @return #{$toRem}rem;
+}
+
+
+@mixin fontSize($size){
+  $toRem: $size / 16px;
+  font-size: #{$toRem}rem;
+}
+
 // Media queries breakpoints
 @mixin from($bp){
     @if map-has-key($breakpoints, $bp){

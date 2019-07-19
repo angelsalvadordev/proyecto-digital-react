@@ -1,6 +1,6 @@
 import React from 'react'
-import './Button.css'
 
+// Need props name, className and link
 const Button = props => {
     return (
         <a href={props.link} className={`btn ${props.className}`}>{props.name}</a>

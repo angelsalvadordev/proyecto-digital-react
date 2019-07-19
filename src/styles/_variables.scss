@@ -6,6 +6,21 @@
     --color-tertiary: hsla(0, 0%, 34%,1);
     --color-dark: hsla(233, 80.2%, 13.3%,1);
     --color-light: hsla(0, 0%, 100%,1);
+    --color-grey: hsla(0, 0%, 90%, 1);
+
+    // Font Size
+    --f-70: #{fontSizeRem(70px)};
+    --f-50: #{fontSizeRem(50px)};
+    --f-40: #{fontSizeRem(40px)};
+    --f-35: #{fontSizeRem(35px)};
+    --f-30: #{fontSizeRem(30px)};
+    --f-24: #{fontSizeRem(24px)};
+    --f-20: #{fontSizeRem(20px)};
+    --f-18: #{fontSizeRem(18px)};
+    --f-16: #{fontSizeRem(16px)};
+    --f-14: #{fontSizeRem(14px)};
+    --f-13: #{fontSizeRem(13px)};
+    --f-12: #{fontSizeRem(12px)};
   
     //z-index
     --z-back: -10;
@@ -22,7 +37,22 @@
     $color-second: hsla(205, 100%, 71%,1);
     $color-dark: hsla(233, 80.2%, 13.3%,1);
     $color-light: hsla(0, 0%, 100%,1);
-    
+    $color-grey: hsla(0, 0%, 90%, 1);
+
+    // FontSize
+    $f-70: #{fontSizeRem(70px)};
+    $f-50: #{fontSizeRem(50px)};
+    $f-40: #{fontSizeRem(40px)};
+    $f-35: #{fontSizeRem(35px)};
+    $f-30: #{fontSizeRem(30px)};
+    $f-24: #{fontSizeRem(24px)};
+    $f-20: #{fontSizeRem(20px)};
+    $f-18: #{fontSizeRem(18px)};
+    $f-16: #{fontSizeRem(16px)};
+    $f-14: #{fontSizeRem(14px)};
+    $f-13: #{fontSizeRem(13px)};
+    $f-12: #{fontSizeRem(12px)};
+
     //z-index
     $z-back: -10;
     $z-normal: 1;
@@ -32,9 +62,9 @@
 
     // Breakpoints
     $breakpoints: (
-        m: 320px,
-        t: 768px,
-        l: 1024px,
-        d: 1200px,
+        movil: 320px,
+        tablet: 768px,
+        laptop: 1024px,
+        desktop: 1200px,
     );
 

@@ -1,7 +1,6 @@
 import React from 'react'
-import './Hero.css'
-import IntroSection from '../molecules/IntroSection'
 import Button from '../atoms/Button';
+import IntroSection from '../molecules/IntroSection'
 
 const Hero = () => {
     return (

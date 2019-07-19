@@ -1,0 +1,16 @@
+.main-logo {
+
+    & span{
+        position: relative;
+        top:-7px;
+
+        @include from(laptop){
+            font-size: $f-30;
+            top:-10px;
+        }
+    }
+
+    @include from(laptop){
+        font-size: 55px;
+    }
+}

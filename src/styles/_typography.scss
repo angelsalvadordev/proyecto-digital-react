@@ -74,40 +74,51 @@
 }
 
 // FontSize classes
+.f-70{
+    @include fontSize(70px);
+}
+
+.f-50{
+    @include fontSize(50px);
+}
+
 .f-40{
-    font-size: 2.5rem;
+    @include fontSize(40px);
 }
 
 .f-35{
-    font-size: 2.18rem;
+    @include fontSize(35px);
 }
 
 .f-30{
-    font-size: 1.87rem;
+    @include fontSize(30px);
 }
 .f-24{
-    font-size: 1.5rem;
+    @include fontSize(24px);
 }
 
 .f-20{
-    font-size: 1.25rem;
+    @include fontSize(20px);
 }
 
+.f-18{
+    @include fontSize(18px);
+}
 
 .f-16{
-    font-size: 1rem;
+    @include fontSize(16px);
 }
 
 .f-14{
-    font-size: 0.87rem;
+    @include fontSize(14px);
 }
 
 .f-13{
-    font-size: 0.81rem;
+    @include fontSize(13px);
 }
 
 .f-12{
-    font-size: 0.75rem;
+    @include fontSize(12px);
 }
 
 // Other classes

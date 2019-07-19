@@ -1,0 +1,35 @@
+.portfolio-nav{
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 35px;
+
+    & .btn{
+        margin-bottom: 10px;
+    }
+}
+
+
+.grid-gallery{
+    grid-template-columns: repeat(1, 1fr);
+    grid-auto-rows: 260px;
+    grid-gap: 1rem;
+    
+    @include from(tablet){
+        &{
+            grid-template-columns: repeat(2, 1fr);
+            grid-auto-flow: row dense;
+          }
+
+        &__item{
+            outline: 1px solid red;
+            grid-column: span 1;
+            grid-row: span 1;
+        }
+    }
+
+    &__image{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}

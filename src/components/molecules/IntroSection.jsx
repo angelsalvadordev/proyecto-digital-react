@@ -1,5 +1,4 @@
 import React from 'react'
-import './IntroSection.css'
 
 // Need props title, className and parag
 const IntroSection = props => {

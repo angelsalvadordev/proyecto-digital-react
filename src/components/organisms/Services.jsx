@@ -2,10 +2,6 @@ import React, { Component } from 'react'
 import IntroSection from '../molecules/IntroSection';
 import Service from '../molecules/Service';
 
-import ServiceDesign from '../../svg/service-design.svg'
-import ServiceDevelop from '../../svg/service-develop.svg'
-import ServiceSEO from '../../svg/service-seo.svg'
-
 class Services extends Component {
     render() {
         return (
@@ -16,19 +12,19 @@ class Services extends Component {
                 />
                 <Service
 
-                    image={ServiceDesign}
+                    image="/media/svg/service-design.svg"
                     name="Diseño de interfaces"
                     parag="Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo"
                 />
                 <Service
 
-                    image={ServiceDevelop}
+                    image="/media/svg/service-develop.svg"
                     name="Desarrollo web"
                     parag="Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo"
                 />
                 <Service
 
-                    image={ServiceSEO}
+                    image="/media/svg/service-seo.svg"
                     name="Posicionamiento Seo"
                     parag="Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo"
                 />

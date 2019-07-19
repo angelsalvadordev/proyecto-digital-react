@@ -1,6 +1,13 @@
 .main-header{
     background-color: var(--color-primary);
     padding: 0;
+
+    @include from(laptop){
+        background-image: url('/media/svg/header-graph.svg');
+        background-size: 705px 394px;
+        background-repeat: no-repeat;
+        background-position: bottom -16px right -230px;
+    }
 }
 
 .main-content{

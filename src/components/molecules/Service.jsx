@@ -1,5 +1,4 @@
 import React from 'react'
-import './Service.css'
 
 // Need props: image, name and parag
 const Service = props => {

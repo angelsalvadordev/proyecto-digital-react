@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import './Home.css'
 import Navigation from '../organisms/Navigation'
 import Hero from '../organisms/Hero';
 import Services from '../organisms/Services'
