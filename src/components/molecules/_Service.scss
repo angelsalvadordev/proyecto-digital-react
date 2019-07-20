@@ -2,7 +2,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 44px 0;
+    margin-top: 55px;
 
     &__image{
         width: 200px;
@@ -14,6 +14,31 @@
         text-align: center;
         margin-top: 4px;
     }
+
+    @include from(laptop){
+       
+        &__title{
+            font-size: $f-50;
+        }
+
+        &__image{
+            width: 322px;
+            height: auto;
+        }
+
+        &__parag{
+            width: 437px;
+            font-size: $f-16;
+        }
+    }
+
+    @include from(desktop){
+
+        &__parag{
+            width: 523px;
+            font-size: $f-18;
+        }
+    }
 }
 
 .border-service{
@@ -22,4 +47,29 @@
     display: block;
     border-radius: 20px;
     margin-top: 20px;
+
+    @include from(laptop){
+        width: 191px;
+    }
+}
+
+.service-left{
+
+    @include from(laptop){
+        align-items: flex-start;
+
+        .service__parag{
+            text-align: left;
+        }
+    }
+}
+.service-right{
+
+    @include from(laptop){
+        align-items: flex-end;
+
+        .service__parag{
+            text-align: right;
+        }
+    }
 }

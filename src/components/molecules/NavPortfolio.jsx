@@ -4,9 +4,9 @@ const NavPortfolio = () => {
     return (
         <>
             <div className="portfolio-nav flex">
-                <Button name="interfaces" className="btn-portfolio f-light bg-primary" link="#" />
-                <Button name="desarrollo web" className="btn-portfolio f-tertiary bg-grey" link="#" />
-                <Button name="posicionamiento" className="btn-portfolio f-light bg-primary" link="#" />
+                <Button name="interfaces" className="f-light bg-primary" link="#" />
+                <Button name="desarrollo web" className="f-tertiary bg-grey" link="#" />
+                <Button name="posicionamiento" className="f-light bg-primary" link="#" />
             </div>
             <div className="grid-gallery grid">
                 <a className="grid-gallery__item" href="#">

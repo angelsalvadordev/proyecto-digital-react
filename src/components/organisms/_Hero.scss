@@ -1,25 +1,38 @@
 .main-hero{
+    margin-top: 22px;
     padding: 0 12px;
 
     @include from(laptop){
         display: block;
-        padding:0;
+        padding: 0;
+        margin:0 34px;
         width: 523px;
-        outline: 1px solid red;
     }
 
     @include from(desktop){
         padding: 0;
+        margin: 0 auto;
+        width: 1145px;
+
+        & h1{
+            width: 523px;
+        }
+
+        & p{
+            width: 523px;
+        }
     }
 }
 
 .hero-buttons{
-    margin: 25px 0;
+    margin-top: 25px;
     height: 125px;
     flex-direction: column;
     justify-content: space-between;
 
     @include from(laptop){
         flex-direction: row;
+        width: 523px;
+        height: 54px;
     }
 }

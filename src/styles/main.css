@@ -189,7 +189,7 @@ a {
       margin-right: auto; } }
   @media screen and (min-width: 1200px) {
     .section {
-      width: 1220px; } }
+      width: 1145px; } }
 
 .grid {
   display: grid; }
@@ -211,36 +211,41 @@ a {
 
 .btn {
   text-align: center;
-  padding: 12px 35px;
+  padding: 10px 15px;
   border-radius: 30px;
-  text-transform: uppercase;
+  font-size: 0.875rem;
   font-weight: 700;
+  text-transform: uppercase;
   letter-spacing: .5px; }
 
 .btn-secondary {
   border: 2px solid var(--color-light); }
 
-.btn-portfolio {
-  padding: 10px 15px;
-  font-size: 14px; }
+.btn-hero {
+  padding: 12px 35px;
+  font-size: 1rem; }
+  @media screen and (min-width: 1024px) {
+    .btn-hero {
+      padding: 12px 54px;
+      font-size: 1.25rem; } }
 
 .main-logo {
   transition: all .2s; }
   .main-logo span {
     position: relative;
-    top: -7px; }
-    @media screen and (min-width: 1024px) {
-      .main-logo span {
-        font-size: 1.875rem;
-        top: -10px; } }
+    top: -12px; }
   @media screen and (min-width: 1024px) {
     .main-logo {
-      font-size: 55px; } }
+      font-size: 55px; }
+      .main-logo span {
+        font-size: 1.875rem;
+        top: -26px; } }
 
 .logo-resize {
   font-size: 1.875rem; }
   .logo-resize span {
-    font-size: 1rem; }
+    font-size: 1rem;
+    top: -12px; }
 
 @media screen and (min-width: 1024px) {
   .menu-burger {
@@ -294,8 +299,13 @@ a {
       .intro-section__title {
         font-size: 4.375rem; }
       .intro-section__parag {
-        font-size: 1.125rem;
-        text-align: left; } }
+        font-size: 1rem;
+        text-align: left;
+        position: relative;
+        top: -7px; } }
+  @media screen and (min-width: 1200px) {
+    .intro-section {
+      font-size: 1.125rem; } }
 
 .main-menu {
   position: absolute;
@@ -317,6 +327,9 @@ a {
       flex-direction: row;
       justify-content: space-between;
       overflow: initial; } }
+  @media screen and (min-width: 1200px) {
+    .main-menu {
+      width: 788px; } }
 
 .show-menu {
   height: 270px; }
@@ -345,6 +358,12 @@ a {
       order: 2;
       display: flex;
       justify-content: space-between; } }
+  @media screen and (min-width: 1200px) {
+    .menu {
+      width: 611px;
+      order: 2;
+      display: flex;
+      justify-content: space-between; } }
   .menu__item {
     display: flex;
     justify-content: center;
@@ -370,6 +389,9 @@ a {
     @media screen and (min-width: 1024px) {
       .menu__link {
         font-size: 1rem; } }
+    @media screen and (min-width: 1200px) {
+      .menu__link {
+        font-size: 1.125rem; } }
 
 .portfolio-nav {
   flex-wrap: wrap;
@@ -414,7 +436,7 @@ a {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 44px 0; }
+  margin-top: 55px; }
   .service__image {
     width: 200px;
     height: 165px;
@@ -422,6 +444,19 @@ a {
   .service__parag {
     text-align: center;
     margin-top: 4px; }
+  @media screen and (min-width: 1024px) {
+    .service__title {
+      font-size: 3.125rem; }
+    .service__image {
+      width: 322px;
+      height: auto; }
+    .service__parag {
+      width: 437px;
+      font-size: 1rem; } }
+  @media screen and (min-width: 1200px) {
+    .service__parag {
+      width: 523px;
+      font-size: 1.125rem; } }
 
 .border-service {
   width: 144px;
@@ -429,27 +464,51 @@ a {
   display: block;
   border-radius: 20px;
   margin-top: 20px; }
+  @media screen and (min-width: 1024px) {
+    .border-service {
+      width: 191px; } }
+
+@media screen and (min-width: 1024px) {
+  .service-left {
+    align-items: flex-start; }
+    .service-left .service__parag {
+      text-align: left; } }
+
+@media screen and (min-width: 1024px) {
+  .service-right {
+    align-items: flex-end; }
+    .service-right .service__parag {
+      text-align: right; } }
 
 .main-hero {
+  margin-top: 22px;
   padding: 0 12px; }
   @media screen and (min-width: 1024px) {
     .main-hero {
       display: block;
       padding: 0;
-      width: 523px;
-      outline: 1px solid red; } }
+      margin: 0 34px;
+      width: 523px; } }
   @media screen and (min-width: 1200px) {
     .main-hero {
-      padding: 0; } }
+      padding: 0;
+      margin: 0 auto;
+      width: 1145px; }
+      .main-hero h1 {
+        width: 523px; }
+      .main-hero p {
+        width: 523px; } }
 
 .hero-buttons {
-  margin: 25px 0;
+  margin-top: 25px;
   height: 125px;
   flex-direction: column;
   justify-content: space-between; }
   @media screen and (min-width: 1024px) {
     .hero-buttons {
-      flex-direction: row; } }
+      flex-direction: row;
+      width: 523px;
+      height: 54px; } }
 
 .main-navigation {
   position: relative;
@@ -461,13 +520,15 @@ a {
     justify-content: space-between; }
   @media screen and (min-width: 1024px) {
     .main-navigation {
-      padding: 40px 0; }
+      padding: 40px 0 18px 0; }
       .main-navigation__content {
         width: 956px;
         margin: 0 auto; } }
   @media screen and (min-width: 1200px) {
     .main-navigation {
-      padding: 40px 0; } }
+      padding: 40px 0; }
+      .main-navigation__content {
+        width: 1145px; } }
 
 .navigation-color {
   background-color: var(--color-dark); }
@@ -482,8 +543,17 @@ a {
     .navigation-fixed {
       padding: 5px 0; } }
 
+@media screen and (min-width: 1024px) {
+  .header-services {
+    width: 437px; } }
+
+@media screen and (min-width: 1200px) {
+  .header-services {
+    width: 523px; } }
+
 .container-header {
-  background-color: var(--color-primary); }
+  background-color: var(--color-primary);
+  padding-bottom: 30px; }
   @media screen and (min-width: 1024px) {
     .container-header {
       background-image: url("/media/svg/header-graph.svg");
@@ -491,11 +561,11 @@ a {
       background-repeat: no-repeat;
       background-position: bottom -16px right -230px;
       width: 100%;
-      outline: 2px solid purple; } }
+      padding-bottom: 45px; } }
   @media screen and (min-width: 1200px) {
     .container-header {
       background-size: 1290px 650px;
-      background-position: bottom -30px right -280px; } }
+      background-position: bottom -30px right -380px; } }
 
 .main-header {
   padding: 0; }
@@ -504,7 +574,15 @@ a {
       width: 100%; } }
 
 .main-services {
-  margin-top: 48px; }
+  padding-top: 48px;
+  padding-bottom: 48px; }
+  @media screen and (min-width: 1024px) {
+    .main-services {
+      padding-top: 58px;
+      padding-bottom: 58px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between; } }
 
 .main-testimonies {
   padding-top: 28px;

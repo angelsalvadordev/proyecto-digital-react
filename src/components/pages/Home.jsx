@@ -15,7 +15,7 @@ class Home extends Component {
                         <Hero />
                     </div>
                 </header>
-                <main className="container main-content">
+                <main className="container container-main">
                     <section className="section main-services">
                         <Services />
                     </section>

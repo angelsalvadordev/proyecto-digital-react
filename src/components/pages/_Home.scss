@@ -1,5 +1,6 @@
 .container-header{
     background-color: var(--color-primary);
+    padding-bottom: 30px;
 
     @include from(laptop){
         background-image: url('/media/svg/header-graph.svg');
@@ -7,12 +8,12 @@
         background-repeat: no-repeat;
         background-position: bottom -16px right -230px;
         width: 100%;
-        outline: 2px solid purple;
+        padding-bottom: 45px;
     }
 
     @include from(desktop){
         background-size: 1290px 650px;
-        background-position: bottom -30px right -280px;
+        background-position: bottom -30px right -380px;
     }
 }
 
@@ -24,12 +25,17 @@
     }
 }
 
-.main-content{
-
-}
-
 .main-services{
-    margin-top: 48px;
+    padding-top: 48px;
+    padding-bottom: 48px;
+
+    @include from(laptop){
+        padding-top: 58px;
+        padding-bottom: 58px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
 }
 
 .main-testimonies{

@@ -19,6 +19,10 @@
         justify-content: space-between;
         overflow: initial;
     }
+
+    @include from(desktop){
+        width: 788px;
+    }
 }
 
 .show-menu{
@@ -50,6 +54,13 @@
 
     @include from(laptop){
         width: 533px;
+        order:2;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    @include from(desktop){
+        width: 611px;
         order:2;
         display: flex;
         justify-content: space-between;
@@ -87,6 +98,10 @@
 
         @include from(laptop){
             font-size: $f-16;
+        }
+
+        @include from(desktop){
+            font-size: $f-18;
         }
     }
 }

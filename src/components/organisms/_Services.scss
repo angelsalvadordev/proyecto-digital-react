@@ -1,0 +1,19 @@
+.services-left{
+
+    @include from(laptop){
+
+    }
+}
+
+.header-services{
+
+    @include from(laptop){
+        
+        width: 437px;
+    }
+
+    @include from(desktop){
+        width: 523px;
+    }
+}
+

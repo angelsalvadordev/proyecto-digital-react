@@ -15,8 +15,14 @@
       }
 
       &__parag{
-        font-size: $f-18;
+        font-size: $f-16;
         text-align: left;
+        position: relative;
+        top:-7px;
       }
+    }
+
+    @include from(desktop){
+      font-size: $f-18;
     }
 }

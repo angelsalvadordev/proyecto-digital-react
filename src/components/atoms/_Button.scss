@@ -1,9 +1,10 @@
 .btn{
     text-align: center;
-    padding: 12px 35px;
+    padding: 10px 15px;
     border-radius: 30px;
-    text-transform: uppercase;
+    font-size: $f-14;
     font-weight: 700;
+    text-transform: uppercase;
     letter-spacing: .5px;
 }
 
@@ -11,7 +12,12 @@
     border: 2px solid var(--color-light);
 }
 
-.btn-portfolio{
-    padding: 10px 15px;
-    font-size: 14px;
+.btn-hero{
+    padding: 12px 35px;
+    font-size: $f-16;
+
+    @include from(laptop){
+        padding: 12px 54px;
+        font-size: $f-20;
+    }
 }
