@@ -1,5 +1,5 @@
 .main-logo {
-
+    transition: all .2s;
     & span{
         position: relative;
         top:-7px;
@@ -12,5 +12,13 @@
 
     @include from(laptop){
         font-size: 55px;
+    }
+}
+
+.logo-resize{
+    font-size: $f-30;
+    
+    & span{
+        font-size: $f-16;
     }
 }

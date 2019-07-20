@@ -4,7 +4,10 @@ import React from 'react'
 const IntroSection = props => {
     return (
         <div className="intro-section">
-            <h2 className={`f-pattaya f-40 intro-section__title ${props.className}`}>{props.title}</h2>
+            {props.size === "h1"
+                ? <h1 id={props.id} className={`f-pattaya f-40 intro-section__title ${props.className}`}>{props.title}</h1>
+                : <h2 id={props.id} className={`f-pattaya f-40 intro-section__title ${props.className}`}>{props.title}</h2>
+            }
             <p className={`f-14 f-tertiary intro-section__parag ${props.className}`}>{props.parag}</p>
         </div>
     )

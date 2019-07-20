@@ -7,7 +7,6 @@
     display: flex;
     overflow: hidden;
     transition: height .5s;
-    outline: 1px solid red;
 
     @include from(laptop){
         background-color: transparent;
@@ -31,7 +30,6 @@
     width: 120px;
     margin: 15px auto 0 auto;
     justify-content: space-between;
-    outline: 2px solid purple;
 
     @include from(laptop){
         order:1;

@@ -1,29 +1,43 @@
-.main-header{
+.container-header{
     background-color: var(--color-primary);
-    padding: 0;
 
     @include from(laptop){
         background-image: url('/media/svg/header-graph.svg');
         background-size: 705px 394px;
         background-repeat: no-repeat;
         background-position: bottom -16px right -230px;
+        width: 100%;
+        outline: 2px solid purple;
+    }
+
+    @include from(desktop){
+        background-size: 1290px 650px;
+        background-position: bottom -30px right -280px;
+    }
+}
+
+.main-header{
+    padding: 0;
+
+    @include from(laptop){
+        width: 100%;
     }
 }
 
 .main-content{
-    padding-left:0;
-    padding-right: 0;
+
 }
 
 .main-services{
     margin-top: 48px;
-    padding: 0 12px;
 }
 
 .main-testimonies{
-    padding: 28px 12px;
+    padding-top: 28px;
+    padding-bottom: 28px;
 }
 
 .main-portfolio{
-    padding: 28px 12px;
+    padding-top: 28px;
+    padding-bottom: 28px;
 }

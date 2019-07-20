@@ -180,11 +180,15 @@ a {
 
 .section {
   width: 100%;
-  margin-left: auto;
-  margin-right: auto; }
+  padding: 0 12px; }
+  @media screen and (min-width: 1024px) {
+    .section {
+      width: 956px;
+      padding: 0;
+      margin-left: auto;
+      margin-right: auto; } }
   @media screen and (min-width: 1200px) {
     .section {
-      outline: 2px solid green;
       width: 1220px; } }
 
 .grid {
@@ -220,17 +224,23 @@ a {
   padding: 10px 15px;
   font-size: 14px; }
 
-.main-logo span {
-  position: relative;
-  top: -7px; }
+.main-logo {
+  transition: all .2s; }
+  .main-logo span {
+    position: relative;
+    top: -7px; }
+    @media screen and (min-width: 1024px) {
+      .main-logo span {
+        font-size: 1.875rem;
+        top: -10px; } }
   @media screen and (min-width: 1024px) {
-    .main-logo span {
-      font-size: 1.875rem;
-      top: -10px; } }
+    .main-logo {
+      font-size: 55px; } }
 
-@media screen and (min-width: 1024px) {
-  .main-logo {
-    font-size: 55px; } }
+.logo-resize {
+  font-size: 1.875rem; }
+  .logo-resize span {
+    font-size: 1rem; }
 
 @media screen and (min-width: 1024px) {
   .menu-burger {
@@ -278,6 +288,14 @@ a {
   align-items: center; }
   .intro-section__parag {
     text-align: center; }
+  @media screen and (min-width: 1024px) {
+    .intro-section {
+      display: block; }
+      .intro-section__title {
+        font-size: 4.375rem; }
+      .intro-section__parag {
+        font-size: 1.125rem;
+        text-align: left; } }
 
 .main-menu {
   position: absolute;
@@ -287,8 +305,7 @@ a {
   left: 0;
   display: flex;
   overflow: hidden;
-  transition: height .5s;
-  outline: 1px solid red; }
+  transition: height .5s; }
   @media screen and (min-width: 1024px) {
     .main-menu {
       background-color: transparent;
@@ -308,8 +325,7 @@ a {
   order: 2;
   width: 120px;
   margin: 15px auto 0 auto;
-  justify-content: space-between;
-  outline: 2px solid purple; }
+  justify-content: space-between; }
   @media screen and (min-width: 1024px) {
     .social {
       order: 1;
@@ -415,47 +431,85 @@ a {
   margin-top: 20px; }
 
 .main-hero {
-  padding: 12px 12px 0 12px; }
+  padding: 0 12px; }
+  @media screen and (min-width: 1024px) {
+    .main-hero {
+      display: block;
+      padding: 0;
+      width: 523px;
+      outline: 1px solid red; } }
+  @media screen and (min-width: 1200px) {
+    .main-hero {
+      padding: 0; } }
 
 .hero-buttons {
   margin: 25px 0;
   height: 125px;
   flex-direction: column;
   justify-content: space-between; }
+  @media screen and (min-width: 1024px) {
+    .hero-buttons {
+      flex-direction: row; } }
 
 .main-navigation {
-  justify-content: space-between;
-  padding: 5px 10px;
   position: relative;
-  transition: background .5s;
-  outline: 1px solid red; }
+  width: 100%;
+  transition: background .3s;
+  padding: 5px 12px; }
+  .main-navigation__content {
+    width: 100%;
+    justify-content: space-between; }
   @media screen and (min-width: 1024px) {
     .main-navigation {
-      padding: 40px 34px; } }
+      padding: 40px 0; }
+      .main-navigation__content {
+        width: 956px;
+        margin: 0 auto; } }
   @media screen and (min-width: 1200px) {
     .main-navigation {
       padding: 40px 0; } }
 
-.main-header {
-  background-color: var(--color-primary);
-  padding: 0; }
+.navigation-color {
+  background-color: var(--color-dark); }
+
+.navigation-fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: var(--color-dark);
+  z-index: var(--z-fixed); }
   @media screen and (min-width: 1024px) {
-    .main-header {
+    .navigation-fixed {
+      padding: 5px 0; } }
+
+.container-header {
+  background-color: var(--color-primary); }
+  @media screen and (min-width: 1024px) {
+    .container-header {
       background-image: url("/media/svg/header-graph.svg");
       background-size: 705px 394px;
       background-repeat: no-repeat;
-      background-position: bottom -16px right -230px; } }
+      background-position: bottom -16px right -230px;
+      width: 100%;
+      outline: 2px solid purple; } }
+  @media screen and (min-width: 1200px) {
+    .container-header {
+      background-size: 1290px 650px;
+      background-position: bottom -30px right -280px; } }
 
-.main-content {
-  padding-left: 0;
-  padding-right: 0; }
+.main-header {
+  padding: 0; }
+  @media screen and (min-width: 1024px) {
+    .main-header {
+      width: 100%; } }
 
 .main-services {
-  margin-top: 48px;
-  padding: 0 12px; }
+  margin-top: 48px; }
 
 .main-testimonies {
-  padding: 28px 12px; }
+  padding-top: 28px;
+  padding-bottom: 28px; }
 
 .main-portfolio {
-  padding: 28px 12px; }
+  padding-top: 28px;
+  padding-bottom: 28px; }

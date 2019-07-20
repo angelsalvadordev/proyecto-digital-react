@@ -6,4 +6,17 @@
     &__parag{
       text-align: center;
     }
+
+    @include from(laptop){
+      display: block;
+
+      &__title{
+        font-size: $f-70;
+      }
+
+      &__parag{
+        font-size: $f-18;
+        text-align: left;
+      }
+    }
 }

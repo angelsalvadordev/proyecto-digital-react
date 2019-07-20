@@ -1,15 +1,43 @@
 .main-navigation{
-    justify-content: space-between;
-    padding: 5px 10px;
     position: relative;
-    transition: background .5s;
-    outline: 1px solid red;
+    width: 100%;
+    transition: background .3s;
+    padding: 5px 12px;
+
+    &__content{
+        width: 100%;
+        justify-content: space-between;
+    }
 
     @include from(laptop){
-        padding:40px 34px;
+        padding:40px 0;
+        
+        &__content{
+            width: 956px;
+            margin: 0 auto;
+            
+        }
     }
     
     @include from(desktop){
         padding: 40px 0;
+    }
+
+}
+
+.navigation-color{
+    background-color: var(--color-dark);
+    // z-index: var(--z-fixed);
+}
+
+.navigation-fixed{
+    position: fixed;
+    top:0;
+    left:0;
+    background-color: var(--color-dark);
+    z-index: var(--z-fixed);
+
+    @include from(laptop){
+        padding: 5px 0;
     }
 }

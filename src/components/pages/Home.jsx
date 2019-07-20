@@ -9,8 +9,8 @@ class Home extends Component {
     render() {
         return (
             <>
-                <header className="container main-header">
-                    <div className="section">
+                <header className="container container-header" id="inicio">
+                    <div className="section main-header">
                         <Navigation />
                         <Hero />
                     </div>
