@@ -1,23 +1,29 @@
 .btn{
     text-align: center;
-    padding: 10px 15px;
+    padding: 7px 20px;
     border-radius: 30px;
     font-size: $f-14;
-    font-weight: 700;
+    font-weight: 400;
     text-transform: uppercase;
     letter-spacing: .5px;
-}
 
-.btn-secondary{
-    border: 2px solid var(--color-light);
+    @include from(laptop){
+        font-size: $f-16;
+    }
 }
 
 .btn-hero{
     padding: 12px 35px;
     font-size: $f-16;
+    box-shadow: 0 3px 6px hsla(0,0,0,.16);
 
     @include from(laptop){
         padding: 12px 54px;
         font-size: $f-20;
     }
+}
+
+.btn-secondary{
+    border: 2px solid var(--color-light);
+    box-shadow: none;
 }

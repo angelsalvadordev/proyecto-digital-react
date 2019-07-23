@@ -33,6 +33,6 @@
     @include from(laptop){
         flex-direction: row;
         width: 523px;
-        height: 54px;
+        height: auto;
     }
 }

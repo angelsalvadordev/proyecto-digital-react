@@ -19,7 +19,7 @@ class Home extends Component {
                     <section className="section main-services">
                         <Services />
                     </section>
-                    <section className="section main-testimonies bg-primary">
+                    <section className="section main-testimonies">
                         <Testimonies />
                     </section>
                     <section className="section main-portfolio">

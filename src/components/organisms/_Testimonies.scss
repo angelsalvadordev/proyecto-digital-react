@@ -1,0 +1,35 @@
+.testimonies{
+    @include from(laptop){
+        width: 956px;
+        margin: 0 auto;
+    }
+    
+    @include from(desktop){
+        width: 1145px;
+    }
+}
+
+.header-testimonies{
+    padding: 0 12px;
+    @include from(laptop){
+        width: 437px;
+        padding: 0;
+    }
+}
+
+.carousel-testimonies{
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    height:255px;
+    margin-top: 48px;
+}
+
+.cards-container{
+    width: 100%;
+    display: grid;
+    grid-auto-flow: column;
+    grid-gap: 54px;
+    position: absolute;
+    right:65%;
+}

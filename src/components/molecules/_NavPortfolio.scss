@@ -1,35 +1,40 @@
 .portfolio-nav{
-    flex-wrap: wrap;
+    flex-direction: column;
     justify-content: space-between;
-    margin-top: 35px;
+    width: 60%;
+    height: 150px;
+    margin: 15px auto;
 
-    & .btn{
-        margin-bottom: 10px;
+    @include from(tablet){
+        width: 70%;
+        height: auto;
+        flex-direction: row;
+    }
+    @include from(laptop){
+        width: 58%;
+        margin: 15px 0;
+    }
+    @include from(desktop){
+        width: 50%;
+        margin: 15px 0;
     }
 }
 
 
-.grid-gallery{
+.gallery-cards{
     grid-template-columns: repeat(1, 1fr);
-    grid-auto-rows: 260px;
     grid-gap: 1rem;
-    
+
     @include from(tablet){
         &{
             grid-template-columns: repeat(2, 1fr);
             grid-auto-flow: row dense;
           }
-
+    
         &__item{
-            outline: 1px solid red;
             grid-column: span 1;
             grid-row: span 1;
         }
     }
 
-    &__image{
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-    }
 }

@@ -1,0 +1,10 @@
+.header-portfolio{
+    
+    @include from(laptop){
+        width: 500px;
+    }
+
+    @include from(desktop){
+        width: 670px;
+    }
+}

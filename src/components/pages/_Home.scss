@@ -39,8 +39,12 @@
 }
 
 .main-testimonies{
-    padding-top: 28px;
-    padding-bottom: 28px;
+    background-color: var(--color-primary);
+    padding: 20px 0;
+
+    @include from(laptop){
+        width: 100%;
+    }
 }
 
 .main-portfolio{

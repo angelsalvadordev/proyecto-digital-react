@@ -1,8 +1,8 @@
 import React from 'react'
-const CardTestimony = () => {
+const CardTestimony = props => {
     return (
         <div className="card-testimony flex justify-content-center">
-            <img className="card-testimony__image" src="images/descarga.jpg" alt="imagen" />
+            <img className="card-testimony__image" src={props.image} alt="imagen" />
             <div className="card-testimony__bg bg-light">
                 <h4 className="f-24 f-poppins-r">Alice Cooper</h4>
                 <span className="f-14 f-primary">GoodAgency, CEO</span>

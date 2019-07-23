@@ -1,68 +1,51 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Web Proyecto Digital
 
-## Available Scripts
+DOCUMENTACION EN ESPAÑOL:
 
-In the project directory, you can run:
+![imagen web proyecto digital](/public/media/images/demo.jpg "imagen web proyecto digital")
 
-### `npm start`
+## Objetivos
+Crear una web en la cual se implemente el uso de react para construir la interfaz.
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Tecnologias, librerias y complementos:
+* REACT
+* SASS
+* MATERIAL ICON
+* ADOBE XD
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+## Caracteristicas:
+* Responsive en las siguientes resoluciones:
+  * Movil - 320px
+  * Tablet - 768px
+  * Laptop - 1024px
+  * Desktop: 1200px
 
-### `npm test`
+## Ver demo
+[Outfit Republic](https://angelsalvadordev.github.io/outfit-republic/)
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+--------------------------------------------------
+ENGLISH DOCUMENTATION
 
-### `npm run build`
+![image outfit republic](/src/img/img-demo.jpg "web outfit republic")
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Objectives
+I created a website in which implement HTML, CSS and pure JS, without use frameworks or libraries. I made the creation only index page.
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
+## Technologies, libraries and complements:
+* HTML
+* CSS
+* JAVASCRIPT
+* ADOBE XD
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Characteristics:
+* Responsive in the following resolutions:
+  * Movil - 360px
+  * Tablet - 960px
+  * Laptop - 1200px
+  * Desktop: 1600px
 
-### `npm run eject`
+* Carousel of images responsive with pure javascript
+*Note*: PoC (proof of concept) of the carousel in [PoC Carousel with Vanilla Javascript](https://github.com/angelsalvadordev/carousel-javascript-puro)
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+## View demo
+[Outfit Republic](https://angelsalvadordev.github.io/outfit-republic/)
