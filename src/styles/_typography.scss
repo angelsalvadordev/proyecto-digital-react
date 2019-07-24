@@ -1,4 +1,4 @@
-// Material Icon
+// Material Icon Font
 @font-face {
     font-family: 'MaterialIcon';
     src: url('../fonts/material-icon/MaterialIcons-Regular.ttf') format('truetype'),
@@ -9,7 +9,7 @@
     font-style: normal;
 }
 
-// Pattaya
+// Pattaya Font
 @font-face {
     font-family: 'Pattaya-web';
     src: url('../fonts/pattaya/Pattaya-Regular.ttf') format('truetype');
@@ -18,7 +18,7 @@
     font-style: normal;
 }
 
-// Poppins
+// Poppins Font
 @font-face {
     font-family: 'Poppins-web Regular';
     src: url('../fonts/poppins/Poppins-Regular.ttf') format('truetype'),
@@ -48,7 +48,7 @@
     font-style: italic;
 }
 
-// Font classes
+// Font Family classes
 .f-icon{
     font-family: 'MaterialIcon';
 }

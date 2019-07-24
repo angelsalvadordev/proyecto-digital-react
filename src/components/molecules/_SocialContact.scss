@@ -1,0 +1,22 @@
+.social-contact{
+    margin-top: 38px;
+    width:100%;
+    align-items: center;
+
+    & a{
+        display: flex;
+        width: 112px;
+        margin-bottom: 22px;
+    }
+
+    & img{
+        width: 30px;
+        height: 30px;
+    }
+
+    & span{
+        margin-left: 10px;
+        font-size: 14px;
+        line-height: 30px;
+    }
+}

@@ -22,7 +22,6 @@ const NavPortfolio = () => {
                     <CardPortfolio image="/media/images/img-9.jpg" />
                     <CardPortfolio image="/media/images/img-10.jpg" />
                     <CardPortfolio image="/media/images/img-11.jpg" />
-
                 </ul>
             </div>
         </>

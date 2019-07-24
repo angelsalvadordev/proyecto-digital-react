@@ -1,12 +1,13 @@
 import React from 'react'
+import SocialButton from '../atoms/SocialButton'
 
 const Menu = () => {
     return (
         <div className="main-menu bg-dark flex-column justify-content-center" id="main-menu">
             <div className="social flex">
-                <a href="/"><img src="/media/svg/instagram.svg" className="social__icon" alt="icono instagram" /></a>
-                <a href="/"><img src="/media/svg/twitter.svg" className="social__icon" alt="icono twitter" /></a>
-                <a href="/"><img src="/media/svg/facebook.svg" className="social__icon" alt="icono facebook" /></a>
+                <SocialButton name="instagram" />
+                <SocialButton name="twitter" />
+                <SocialButton name="facebook" />
             </div>
             <ul className="menu">
                 <li className="menu__item"><a href="#inicio" className="menu__link f-14">Inicio</a></li>

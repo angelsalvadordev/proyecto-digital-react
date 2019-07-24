@@ -4,6 +4,7 @@ import Hero from '../organisms/Hero';
 import Services from '../organisms/Services'
 import Testimonies from '../organisms/Testimonies'
 import Portfolio from '../organisms/Portfolio';
+import Contact from '../organisms/Contact'
 
 class Home extends Component {
     render() {
@@ -26,9 +27,9 @@ class Home extends Component {
                         <Portfolio />
                     </section>
                 </main>
-                <footer className="container">
+                <footer className="container container-footer">
                     <section className="section main-footer">
-
+                        <Contact />
                     </section>
                 </footer>
             </>

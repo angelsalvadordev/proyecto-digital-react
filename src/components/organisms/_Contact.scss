@@ -1,0 +1,19 @@
+.contact{
+    flex-direction: column;
+}
+
+.contact-left{
+
+    @include from(laptop){
+        width: 410px;
+        outline: 1px solid red;
+    }
+    @include from(desktop){
+        width: 460px;
+        outline: 1px solid red;
+    }
+}
+
+.contact-right{
+    margin-top: 10px;
+}
