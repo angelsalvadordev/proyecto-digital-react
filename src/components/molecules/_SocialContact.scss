@@ -19,4 +19,16 @@
         font-size: 14px;
         line-height: 30px;
     }
+
+    @include from(tablet){
+        width: 412px;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-left: auto;
+        margin-right: auto;
+
+        & a{
+            width: auto;
+        }
+    }
 }

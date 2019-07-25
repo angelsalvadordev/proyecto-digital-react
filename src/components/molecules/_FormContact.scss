@@ -1,5 +1,9 @@
 .contact-form{
     margin-top: 36px;
+
+    @include from(laptop){
+        margin-top: 22px;
+    }
 }
 .contact-input{
     width: 100%;
@@ -16,6 +20,10 @@
         font-size: 13px;
         color: var(--color-tertiary);
     }
+
+    @include from(laptop){
+        width: 92%;
+    }
 }
 
 .contact-message{
@@ -23,7 +31,7 @@
 }
 
 .contact-textarea{
-    width: 95%;
+    width: 96%;
     height: 230px;
     margin: 0;
     overflow-y: scroll;
@@ -32,13 +40,17 @@
     resize: none;
     font-size: 13px;
     overflow: hidden;
+
+    @include from(laptop){
+        width: 92%;
+    }
 }
 .contact-button{
     background-color: var(--color-secondary);  
     position: absolute;
     width: 60px;
     height: 60px;
-    padding: 0;
+    padding: 0 0 0 5px;
     margin: 0;
     border-radius: 50%;
     bottom: 0;
@@ -46,4 +58,16 @@
     font-size: 30px;
     color: var(--color-light);
     cursor: pointer;
+
+    @include from(laptop){
+        width: 70px;
+        height: 70px;
+        bottom: 24px;
+    }
+
+    @include from(desktop){
+        width: 89px;
+        height: 89px;
+        font-size: 40px;
+    }
 }

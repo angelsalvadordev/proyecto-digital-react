@@ -20,4 +20,14 @@
     &__copyright{
         font-size: 13px;
     }
+
+    @include from(tablet){
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top: 20px;
+    }
+
+    @include from(laptop){
+        margin-top: 70px;
+    }
 }
