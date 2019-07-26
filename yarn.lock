@@ -932,6 +932,11 @@
   resolved "https://registry.yarnpkg.com/@csstools/normalize.css/-/normalize.css-9.0.1.tgz#c27b391d8457d1e893f1eddeaf5e5412d12ffbb5"
   integrity sha512-6It2EVfGskxZCQhuykrfnALg7oVeiI6KclWSmGDqB0AiInVrTGB9Jp9i4/Ad21u9Jde/voVQz6eFX/eSg/UsPA==
 
+"@glidejs/glide@^3.3.0":
+  version "3.3.0"
+  resolved "https://registry.yarnpkg.com/@glidejs/glide/-/glide-3.3.0.tgz#5d0a0cddad863a66272a15826919c64c60351094"
+  integrity sha512-8rs4yGHRlCOvubBM7RyB4sijzl0q5ST7Yvv9frSb8xIRWdztoY7lP/uMMc9GBEM0up5MvxIYWOXig1b5gT/j2A==
+
 "@hapi/address@2.x.x":
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/@hapi/address/-/address-2.0.0.tgz#9f05469c88cb2fd3dcd624776b54ee95c312126a"

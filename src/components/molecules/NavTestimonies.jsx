@@ -1,11 +1,12 @@
 import React from 'react'
 const NavTestimonies = () => {
     return (
-        <div className="nav-testimonies flex">
-            <span className="nav-testimonies__button bg-light nav-testimonies__active"></span>
-            <span className="nav-testimonies__button bg-light"></span>
-            <span className="nav-testimonies__button bg-light"></span>
-            <span className="nav-testimonies__button bg-light"></span>
+        <div className="glide__bullets testimonies-bullets flex" data-glide-el="controls[nav]">
+            <span className="testimonies-bullets__button bg-light" data-glide-dir="=0"></span>
+            <span className="testimonies-bullets__button bg-light" data-glide-dir="=1"></span>
+            <span className="testimonies-bullets__button bg-light" data-glide-dir="=2"></span>
+            <span className="testimonies-bullets__button bg-light" data-glide-dir="=3"></span>
+            <span className="testimonies-bullets__button bg-light" data-glide-dir="=4"></span>
         </div>
     )
 }

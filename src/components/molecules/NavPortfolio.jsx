@@ -11,17 +11,17 @@ const NavPortfolio = () => {
             </div>
             <div className="grid-gallery">
                 <ul className="gallery-cards grid">
-                    <CardPortfolio image="/media/images/img-1.jpg" />
-                    <CardPortfolio image="/media/images/img-2.jpg" />
-                    <CardPortfolio image="/media/images/img-3.jpg" />
-                    <CardPortfolio image="/media/images/img-4.jpg" />
-                    <CardPortfolio image="/media/images/img-5.jpg" />
-                    <CardPortfolio image="/media/images/img-6.jpg" />
-                    <CardPortfolio image="/media/images/img-7.jpg" />
-                    <CardPortfolio image="/media/images/img-8.jpg" />
-                    <CardPortfolio image="/media/images/img-9.jpg" />
-                    <CardPortfolio image="/media/images/img-10.jpg" />
-                    <CardPortfolio image="/media/images/img-11.jpg" />
+                    <CardPortfolio image="/images/image/img-1.jpg" />
+                    <CardPortfolio image="/images/image/img-2.jpg" />
+                    <CardPortfolio image="/images/image/img-3.jpg" />
+                    <CardPortfolio image="/images/image/img-4.jpg" />
+                    <CardPortfolio image="/images/image/img-5.jpg" />
+                    <CardPortfolio image="/images/image/img-6.jpg" />
+                    <CardPortfolio image="/images/image/img-7.jpg" />
+                    <CardPortfolio image="/images/image/img-8.jpg" />
+                    <CardPortfolio image="/images/image/img-9.jpg" />
+                    <CardPortfolio image="/images/image/img-10.jpg" />
+                    <CardPortfolio image="/images/image/img-11.jpg" />
                 </ul>
             </div>
         </>

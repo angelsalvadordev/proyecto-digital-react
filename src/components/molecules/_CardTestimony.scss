@@ -1,14 +1,15 @@
 .card-testimony{
     margin-left: auto;
     margin-right: auto;
-    width: 292px;
+    width: 314px;
     justify-content: space-between;
 
     &__bg{
         border-radius: 10px;
-        width: 247px;
+        width: 270px;
         padding: 12px 22px;
         position: relative;
+        box-shadow: 0 3px 6px hsla(0,0,0,.16);
 
         &::before{
             content:'';
@@ -17,9 +18,11 @@
             height: 38px;
             position: absolute;
             top: 64px;
-            left:-30px;
+            left:-29px;
             clip-path: polygon(0% 0%,100% 0, 100% 100%);
+            box-shadow: 0 3px 6px hsla(0,0,0,.16);
         }
+
     }
 
     &__image{
@@ -27,17 +30,84 @@
         height: 40px;
         border-radius: 50%;
         object-fit: cover;
-        margin-top: 18px;
+        margin-top: 14px;
+    }
+
+    @include from(tablet){
+        margin-left: 20px;
+    }
+
+    @include from(laptop){
+        margin-left: auto;
+        margin-right: auto;
+        width: 490px;
+
+        &__bg{
+            width: 384px;
+            
+            &::before{
+                width: 47px;
+                height: 62px;
+                top: 100px;
+                left:-47px;
+            }
+        }
+
+        &__image{
+            width: 92px;
+            height: 92px;
+            margin-top: 0;
+        }
+
+        &__name{
+            font-size: 30px;
+        }
+
+        &__company{
+            font-size: 20px;
+        }
+
+        &__parag{
+            font-size: 16px;
+            margin: 14px 0;
+        }
+    }
+
+    @include from(desktop){
+        width: 540px;
+
+        &__bg{
+            width: 437px;
+        }
+        &__bg::before{
+            left:-46px;
+        }
+        &__parag{
+            font-size: 18px;
+        }
     }
 }
 
 .stars-testimony{
     display: flex;
+    width: 94px;
     margin-top: 6px;
+
+    @include from(laptop){
+        width: 212px;
+        margin-top: 20px;
+        margin-bottom: 15px;
+    }
 }
 
 .star-testimony{
     width: 20px;
     height: 21px;
     display: block;
+
+    @include from (laptop){
+        font-size: 35px;
+        width: 40px;
+        height: 41px;
+    }
 }

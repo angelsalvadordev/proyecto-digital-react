@@ -17,7 +17,7 @@ class Services extends Component {
                     <Service
 
                         className="service-left"
-                        image="/media/svg/service-design.svg"
+                        image="/images/svg/service-design.svg"
                         name="Diseño de interfaces"
                         parag="Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo."
                     />
@@ -26,14 +26,14 @@ class Services extends Component {
                     <Service
 
                         className="service-right"
-                        image="/media/svg/service-develop.svg"
+                        image="/images/svg/service-develop.svg"
                         name="Desarrollo web"
                         parag="Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo."
                     />
                     <Service
 
                         className="service-right"
-                        image="/media/svg/service-seo.svg"
+                        image="/images/svg/service-seo.svg"
                         name="Posicionamiento Seo"
                         parag="Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo."
                     />

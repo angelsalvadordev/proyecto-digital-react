@@ -3,7 +3,7 @@ import React from 'react'
 const SocialButton = props => {
     return (
         <a href="/">
-            <img src={`/media/svg/${props.name}.svg`} alt={`icono ${props.name}`} />
+            <img src={`/images/svg/${props.name}.svg`} alt={`icono ${props.name}`} />
             <span>{props.name}</span>
         </a>
     )

@@ -21,8 +21,4 @@
         top:-7px;
       }
     }
-
-    @include from(desktop){
-      font-size: $f-18;
-    }
 }
