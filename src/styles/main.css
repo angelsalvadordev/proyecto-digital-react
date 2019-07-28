@@ -649,15 +649,17 @@ a {
       display: none; } }
 
 .contact-form {
-  margin-top: 36px; }
-  @media screen and (min-width: 1024px) {
-    .contact-form {
-      margin-top: 22px; } }
+  margin-top: 10px; }
+
+pre {
+  background-color: #333;
+  color: #fff;
+  padding: 1rem; }
 
 .contact-input {
   width: 100%;
   height: 45px;
-  margin-bottom: 20px;
+  margin-top: 15px;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
   border: none;
   border-radius: 5px;
@@ -672,18 +674,18 @@ a {
       width: 92%; } }
 
 .contact-message {
-  position: relative; }
+  position: relative;
+  height: auto; }
 
 .contact-textarea {
   width: 96%;
   height: 230px;
-  margin: 0;
   overflow-y: scroll;
   padding-top: 12px;
   padding-bottom: 12px;
   resize: none;
   font-size: 13px;
-  overflow: hidden; }
+  margin-bottom: -6px; }
   @media screen and (min-width: 1024px) {
     .contact-textarea {
       width: 92%; } }
@@ -711,6 +713,24 @@ a {
       width: 89px;
       height: 89px;
       font-size: 40px; } }
+
+.error-message {
+  background-color: #e74040;
+  border-radius: 30px;
+  display: inline-block;
+  margin-top: 5px;
+  padding: 3px 12px;
+  color: var(--color-light);
+  font-size: 12px; }
+  @media screen and (min-width: 1024px) {
+    .error-message {
+      font-size: 14px; } }
+
+.input-error {
+  border: 2px solid #e74040;
+  color: #e74040; }
+  .input-error::placeholder {
+    color: #e74040; }
 
 .intro-location {
   width: 100%;
@@ -821,7 +841,7 @@ a {
       margin-top: 20px; } }
   @media screen and (min-width: 1024px) {
     .credits {
-      margin-top: 70px; } }
+      margin-top: 90px; } }
 
 .main-hero {
   margin-top: 22px;
@@ -852,6 +872,16 @@ a {
       flex-direction: row;
       width: 523px;
       height: auto; } }
+
+.block-navigation {
+  width: 100%;
+  height: 74px; }
+  @media screen and (min-width: 1024px) {
+    .block-navigation {
+      height: 175px; } }
+  @media screen and (min-width: 1200px) {
+    .block-navigation {
+      height: 197px; } }
 
 .main-navigation {
   position: relative;

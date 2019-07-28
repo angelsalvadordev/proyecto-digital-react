@@ -1,14 +1,16 @@
 .contact-form{
-    margin-top: 36px;
+    margin-top: 10px;
+}
 
-    @include from(laptop){
-        margin-top: 22px;
-    }
+pre{
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
 }
 .contact-input{
     width: 100%;
     height: 45px;
-    margin-bottom: 20px;
+    margin-top: 15px;
     box-shadow: 0 3px 6px hsla(0,0,0,.16);
     border: none;
     border-radius: 5px;
@@ -28,18 +30,18 @@
 
 .contact-message{
     position: relative;
+    height: auto;
 }
 
 .contact-textarea{
     width: 96%;
     height: 230px;
-    margin: 0;
     overflow-y: scroll;
     padding-top: 12px;
     padding-bottom: 12px;
     resize: none;
     font-size: 13px;
-    overflow: hidden;
+    margin-bottom: -6px;
 
     @include from(laptop){
         width: 92%;
@@ -69,5 +71,27 @@
         width: 89px;
         height: 89px;
         font-size: 40px;
+    }
+}
+
+.error-message{
+    background-color: rgb(231, 64, 64);
+    border-radius: 30px;
+    display: inline-block;
+    margin-top: 5px;
+    padding: 3px 12px;
+    color: var(--color-light);
+    font-size: 12px;
+    @include from(laptop){
+        font-size: 14px;
+    }
+}
+
+.input-error{
+    border: 2px solid rgb(231, 64, 64);
+    color: rgb(231, 64, 64);
+
+    &::placeholder{
+        color: rgb(231, 64, 64);
     }
 }

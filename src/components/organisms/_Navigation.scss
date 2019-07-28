@@ -1,4 +1,19 @@
+.block-navigation{
+    width: 100%;
+    // outline: 2px solid white;
+    height: 74px;
+
+    @include from (laptop){
+        height: 175px;
+    }
+    
+    @include from(desktop){
+        height: 197px;
+    }
+}
+
 .main-navigation{
+    // outline: 2px solid red;
     position: relative;
     width: 100%;
     transition: background .3s;
