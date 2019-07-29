@@ -211,46 +211,59 @@ a {
 
 .btn {
   text-align: center;
-  padding: 7px 20px;
+  padding: 6px 20px;
   border-radius: 30px;
   font-size: 0.875rem;
   font-weight: 400;
   text-transform: uppercase;
-  letter-spacing: .5px; }
+  letter-spacing: 1px; }
   @media screen and (min-width: 1024px) {
     .btn {
       font-size: 1rem; } }
 
 .btn-hero {
-  padding: 12px 35px;
+  padding: 12px 36px;
   font-size: 1rem;
-  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16); }
+  border: 2px solid var(--color-secondary);
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+  font-weight: 700;
+  transition: all 500ms; }
   @media screen and (min-width: 1024px) {
     .btn-hero {
-      padding: 12px 54px;
-      font-size: 1.25rem; } }
+      padding: 10px 54px;
+      font-size: 1.125rem; } }
+
+.btn-hero:hover {
+  border: 2px solid var(--color-light);
+  background-color: transparent; }
 
 .btn-secondary {
   border: 2px solid var(--color-light);
-  box-shadow: none; }
+  transition: all 500ms; }
+
+.btn-secondary:hover {
+  border: 2px solid var(--color-secondary);
+  background-color: var(--color-secondary);
+  color: var(--color-light); }
 
 .main-logo {
   transition: all .2s; }
   .main-logo span {
     position: relative;
-    top: -12px; }
+    text-align: right;
+    top: -8px; }
   @media screen and (min-width: 1024px) {
     .main-logo {
       font-size: 55px; }
       .main-logo span {
         font-size: 1.875rem;
-        top: -26px; } }
+        top: -20px; } }
 
 .logo-resize {
   font-size: 1.875rem; }
   .logo-resize span {
     font-size: 1rem;
-    top: -12px; }
+    top: -8px; }
 
 @media screen and (min-width: 1024px) {
   .menu-burger {
@@ -443,9 +456,6 @@ a {
     @media screen and (min-width: 1024px) {
       .menu__link {
         font-size: 1rem; } }
-    @media screen and (min-width: 1200px) {
-      .menu__link {
-        font-size: 1.125rem; } }
 
 .portfolio-nav {
   flex-direction: column;
@@ -547,12 +557,11 @@ a {
       width: 322px;
       height: auto; }
     .service__parag {
-      width: 437px;
-      font-size: 1rem; } }
+      width: 437px; } }
   @media screen and (min-width: 1200px) {
     .service__parag {
       width: 523px;
-      font-size: 1.125rem; } }
+      font-size: 1rem; } }
 
 .border-service {
   width: 144px;
@@ -699,10 +708,13 @@ pre {
   margin: 0;
   border-radius: 50%;
   bottom: 0;
-  right: 0;
+  right: -8px;
   font-size: 30px;
   color: var(--color-light);
   cursor: pointer; }
+  @media screen and (min-width: 768px) {
+    .contact-button {
+      right: 0; } }
   @media screen and (min-width: 1024px) {
     .contact-button {
       width: 70px;
@@ -821,7 +833,8 @@ pre {
 .credits {
   display: flex;
   flex-direction: column;
-  align-items: center; }
+  align-items: center;
+  padding: 0 12px; }
   .credits__develop {
     font-size: 14px; }
   .credits__name {
@@ -841,7 +854,14 @@ pre {
       margin-top: 20px; } }
   @media screen and (min-width: 1024px) {
     .credits {
-      margin-top: 90px; } }
+      margin-top: 90px;
+      width: 956px;
+      padding: 0;
+      margin-left: auto;
+      margin-right: auto; } }
+  @media screen and (min-width: 1200px) {
+    .credits {
+      width: 1145px; } }
 
 .main-hero {
   margin-top: 22px;
@@ -870,7 +890,7 @@ pre {
   @media screen and (min-width: 1024px) {
     .hero-buttons {
       flex-direction: row;
-      width: 523px;
+      width: 505px;
       height: auto; } }
 
 .main-navigation {
@@ -952,12 +972,20 @@ pre {
     width: 670px; } }
 
 .contact {
-  flex-direction: column; }
+  flex-direction: column;
+  padding: 0 12px; }
   @media screen and (min-width: 1024px) {
     .contact {
+      width: 956px;
+      padding: 0;
+      margin-left: auto;
+      margin-right: auto;
       flex-direction: row;
       flex-wrap: wrap;
       justify-content: space-between; } }
+  @media screen and (min-width: 1200px) {
+    .contact {
+      width: 1145px; } }
 
 @media screen and (min-width: 1024px) {
   .contact-left {
@@ -979,13 +1007,17 @@ pre {
   padding-bottom: 30px; }
   @media screen and (min-width: 1024px) {
     .container-header {
-      background-image: url("/media/svg/header-graph.svg");
-      background-size: 705px 394px;
+      background-image: url("/images/svg/header-graph.svg");
+      background-size: 653px 434px;
       background-repeat: no-repeat;
-      background-position: bottom -16px right -230px;
+      background-position: bottom -50px right -160px;
       width: 100%;
       padding-bottom: 45px; } }
   @media screen and (min-width: 1200px) {
+    .container-header {
+      background-size: 1000px 800px;
+      background-position: bottom -150px right -220px; } }
+  @media screen and (min-width: 1600px) {
     .container-header {
       background-size: 1290px 650px;
       background-position: bottom -30px right -380px; } }
@@ -997,10 +1029,12 @@ pre {
   @media screen and (min-width: 1024px) {
     .main-header {
       width: 100%;
-      padding-top: 175px; } }
+      padding-top: 175px;
+      padding-bottom: 22px; } }
   @media screen and (min-width: 1200px) {
     .main-header {
-      padding-top: 197px; } }
+      padding-top: 197px;
+      padding-bottom: 70px; } }
 
 .main-services {
   padding-top: 48px;
@@ -1021,9 +1055,38 @@ pre {
       width: 100%; } }
 
 .main-portfolio {
-  padding-top: 28px;
-  padding-bottom: 28px; }
+  padding-top: 40px;
+  padding-bottom: 40px; }
+  @media screen and (min-width: 1024px) {
+    .main-portfolio {
+      padding-top: 50px;
+      padding-bottom: 50px; } }
+  @media screen and (min-width: 1200px) {
+    .main-portfolio {
+      padding-top: 70px;
+      padding-bottom: 70px; } }
 
-.container-footer {
+@media screen and (min-width: 1024px) {
+  .container-footer::before {
+    display: block;
+    z-index: var(--z-back);
+    content: "";
+    width: 100%;
+    height: 208px;
+    top: 0;
+    left: 0;
+    background-image: url("/images/svg/footer-graph.svg");
+    background-size: 2126px 836px;
+    background-repeat: no-repeat;
+    background-position: top -325px left -480px; } }
+
+@media screen and (min-width: 1200px) {
+  .container-footer::before {
+    height: 244px;
+    background-size: 3482px 1369px;
+    background-position: top -537px left -480px; } }
+
+.main-footer {
+  width: 100%;
   background-color: var(--color-primary);
   padding: 28px 0 12px 0; }

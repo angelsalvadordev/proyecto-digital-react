@@ -1,10 +1,19 @@
 .contact{
     flex-direction: column;
+    padding: 0 12px;
 
     @include from(laptop){
+        width: 956px;
+        padding: 0;
+        margin-left: auto;
+        margin-right: auto;
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: space-between;
+    }
+
+    @include from(desktop){
+        width: 1145px;
     }
 }
 

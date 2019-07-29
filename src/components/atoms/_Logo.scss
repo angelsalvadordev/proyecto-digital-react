@@ -3,7 +3,8 @@
 
     & span{
         position: relative;
-        top:-12px;
+        text-align: right;
+        top:-8px;
     }
 
     @include from(laptop){
@@ -11,7 +12,7 @@
 
         & span{
             font-size: $f-30;
-            top:-26px;
+            top:-20px;
         }
     }
 }
@@ -21,6 +22,6 @@
     
     & span{
         font-size: $f-16;
-        top:-12px;
+        top:-8px;
     }
 }

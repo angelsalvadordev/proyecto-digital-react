@@ -28,15 +28,13 @@
 
         &__parag{
             width: 437px;
-            font-size: $f-16;
         }
     }
 
     @include from(desktop){
-
         &__parag{
             width: 523px;
-            font-size: $f-18;
+            font-size: $f-16;
         }
     }
 }

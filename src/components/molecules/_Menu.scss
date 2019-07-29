@@ -109,8 +109,8 @@
             font-size: $f-16;
         }
 
-        @include from(desktop){
-            font-size: $f-18;
-        }
+        // @include from(desktop){
+        //     font-size: $f-18;
+        // }
     }
 }

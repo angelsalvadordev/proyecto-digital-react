@@ -56,10 +56,14 @@ pre{
     margin: 0;
     border-radius: 50%;
     bottom: 0;
-    right: 0;
+    right: -8px;
     font-size: 30px;
     color: var(--color-light);
     cursor: pointer;
+
+    @include from(tablet){
+        right: 0;
+    }
 
     @include from(laptop){
         width: 70px;

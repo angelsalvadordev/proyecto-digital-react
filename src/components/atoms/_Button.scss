@@ -1,11 +1,11 @@
 .btn{
     text-align: center;
-    padding: 7px 20px;
+    padding: 6px 20px;
     border-radius: 30px;
     font-size: $f-14;
     font-weight: 400;
     text-transform: uppercase;
-    letter-spacing: .5px;
+    letter-spacing: 1px;
 
     @include from(laptop){
         font-size: $f-16;
@@ -13,17 +13,31 @@
 }
 
 .btn-hero{
-    padding: 12px 35px;
+    padding: 12px 36px;
     font-size: $f-16;
+    border: 2px solid var(--color-secondary);
     box-shadow: 0 3px 6px hsla(0,0,0,.16);
+    font-weight: 700;
+    transition: all 500ms;
 
     @include from(laptop){
-        padding: 12px 54px;
-        font-size: $f-20;
+        padding: 10px 54px;
+        font-size: $f-18;
     }
+}
+
+.btn-hero:hover{
+    border: 2px solid var(--color-light);
+    background-color: transparent;
 }
 
 .btn-secondary{
     border: 2px solid var(--color-light);
-    box-shadow: none;
+    transition: all 500ms;
+}
+
+.btn-secondary:hover{
+    border: 2px solid var(--color-secondary);
+    background-color: var(--color-secondary);
+    color: var(--color-light);
 }
