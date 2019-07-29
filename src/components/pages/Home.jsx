@@ -11,8 +11,8 @@ class Home extends Component {
         return (
             <>
                 <header className="container container-header" id="inicio">
+                    <Navigation />
                     <div className="section main-header">
-                        <Navigation />
                         <Hero />
                     </div>
                 </header>

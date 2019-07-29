@@ -6,7 +6,7 @@
     left: 0;
     display: flex;
     overflow: hidden;
-    transition: height .5s;
+    transition: height 350ms;
 
     @include from(laptop){
         background-color: transparent;

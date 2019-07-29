@@ -364,7 +364,7 @@ a {
   left: 0;
   display: flex;
   overflow: hidden;
-  transition: height .5s; }
+  transition: height 350ms; }
   @media screen and (min-width: 1024px) {
     .main-menu {
       background-color: transparent;
@@ -873,18 +873,8 @@ pre {
       width: 523px;
       height: auto; } }
 
-.block-navigation {
-  width: 100%;
-  height: 74px; }
-  @media screen and (min-width: 1024px) {
-    .block-navigation {
-      height: 175px; } }
-  @media screen and (min-width: 1200px) {
-    .block-navigation {
-      height: 197px; } }
-
 .main-navigation {
-  position: relative;
+  position: fixed;
   width: 100%;
   transition: background .3s;
   padding: 5px 12px; }
@@ -1001,10 +991,16 @@ pre {
       background-position: bottom -30px right -380px; } }
 
 .main-header {
-  padding: 0; }
+  padding-left: 0;
+  padding-right: 0;
+  padding-top: 74px; }
   @media screen and (min-width: 1024px) {
     .main-header {
-      width: 100%; } }
+      width: 100%;
+      padding-top: 175px; } }
+  @media screen and (min-width: 1200px) {
+    .main-header {
+      padding-top: 197px; } }
 
 .main-services {
   padding-top: 48px;

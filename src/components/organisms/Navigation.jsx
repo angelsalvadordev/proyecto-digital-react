@@ -4,41 +4,70 @@ import Burger from '../atoms/Burger';
 import Menu from '../molecules/Menu';
 
 class Navigation extends Component {
+    constructor(props) {
+        super(props)
+        this.state = {
+            showMenu: false,
+            navigationFixed: false,
+        }
+    }
 
+    showMenuBurger = e => {
+        e.preventDefault()
+        let validateMenu
+        this.state.showMenu ? (validateMenu = false) : (validateMenu = true)
+        this.setState({
+            showMenu: validateMenu
+        })
+    }
+
+    navigationFixed = scroll => {
+        let validateNavigation
+        scroll > 0 ? validateNavigation = true : validateNavigation = false
+
+        this.setState({
+            navigationFixed: validateNavigation
+        })
+    }
+
+    autoScroll = e => {
+        e.preventDefault()
+        let href = e.target.getAttribute('href')
+        let section = document.querySelector(href)
+        let navSize, rangeScroll
+        if (window.scrollY === 0 && section.offsetTop > 0) {
+            window.scroll({ top: 1 })
+        }
+
+        if (section.offsetTop > 0 || href === '#inicio') {
+            this.setState({ showMenu: false })
+            setTimeout(() => {
+                navSize = document.querySelector('.main-navigation').offsetHeight
+                rangeScroll = section.offsetTop - navSize
+                window.scroll({
+                    top: rangeScroll,
+                    left: 0,
+                    behavior: 'smooth'
+                })
+            }, 200);
+        }
+    }
 
     componentDidMount() {
-        const menuBurger = document.getElementById('menu-burger'),
-            mainMenu = document.getElementById('main-menu'),
-            mainNavigation = document.getElementById('main-navigation'),
-            mainLogo = document.querySelector('.main-logo')
-
-        menuBurger.addEventListener('click', e => {
-            e.preventDefault()
-            mainNavigation.classList.toggle('navigation-color')
-            mainMenu.classList.toggle('show-menu')
-        })
-
-        document.addEventListener('scroll', e => {
-            if (window.scrollY === 0) {
-                return (
-                    mainNavigation.classList.remove('navigation-fixed'),
-                    mainLogo.classList.remove('logo-resize')
-                )
-            }
-            mainNavigation.classList.add('navigation-fixed')
-            mainLogo.classList.add('logo-resize')
+        let scrollCount
+        document.addEventListener('scroll', () => {
+            scrollCount = window.scrollY
+            this.navigationFixed(scrollCount)
         })
     }
 
     render() {
         return (
-            <div className="block-navigation" id="block-navigation">
-                <div className="main-navigation" id="main-navigation">
-                    <div className="main-navigation__content flex align-items-center">
-                        <Logo />
-                        <Menu />
-                        <Burger />
-                    </div>
+            <div className={`main-navigation ${this.state.showMenu ? 'navigation-color' : ''} ${this.state.navigationFixed ? 'navigation-fixed' : ''}`}>
+                <div className="main-navigation__content flex align-items-center">
+                    <Logo resize={this.state.navigationFixed} />
+                    <Menu showMenu={this.state.showMenu} autoScroll={this.autoScroll} />
+                    <Burger onclick={this.showMenuBurger} />
                 </div>
             </div>
         )

@@ -18,10 +18,15 @@
 }
 
 .main-header{
-    padding: 0;
-
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 74px;
     @include from(laptop){
         width: 100%;
+        padding-top:175px;
+    }
+    @include from(desktop){
+        padding-top:197px;
     }
 }
 
