@@ -27,6 +27,9 @@ Crear una web en la cual se implemente el uso de react para construir la interfa
 ## Recomendaciones
 [Glide.js](https://glidejs.com/)
 
+Agradecimientos para Michał Mareczko por la creacion de este template gratuito.
+[Observa el template de Michał Mareczko](https://www.behance.net/gallery/69297573/Adobe-Xd-free-onepage-layout)
+
 --------------------------------------------------
 ENGLISH DOCUMENTATION
 
@@ -54,3 +57,6 @@ Create a web in which use react to build interface. Manage to implement automati
 
 ## Recommendations
 [Glide.js](https://glidejs.com/)
+
+Thanks to Michał Mareczko for create this free template
+[See the template of Michał Mareczko](https://www.behance.net/gallery/69297573/Adobe-Xd-free-onepage-layout)
