@@ -12,8 +12,8 @@ const Menu = props => {
             <ul className="menu">
                 <li className="menu__item"><a href="#inicio" onClick={props.autoScroll} className="menu__link f-14">Inicio</a></li>
                 <li className="menu__item"><a href="#servicios" onClick={props.autoScroll} className="menu__link f-14">Servicios</a></li>
-                <li className="menu__item"><a href="#portafolio" onClick={props.autoScroll} className="menu__link f-14">Portafolio</a></li>
                 <li className="menu__item"><a href="#testimonios" onClick={props.autoScroll} className="menu__link f-14">Testimonios</a></li>
+                <li className="menu__item"><a href="#portafolio" onClick={props.autoScroll} className="menu__link f-14">Portafolio</a></li>
                 <li className="menu__item"><a href="#contacto" onClick={props.autoScroll} className="menu__link f-14">Contacto</a></li>
             </ul>
         </div>

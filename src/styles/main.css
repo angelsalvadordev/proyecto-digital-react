@@ -5,6 +5,8 @@
   --color-dark: hsla(233, 80.2%, 13.3%,1);
   --color-light: hsla(0, 0%, 100%,1);
   --color-grey: hsla(0, 0%, 90%, 1);
+  --color-success: hsla(126, 50.5%, 43.5%, 1);
+  --color-danger: hsla(0, 77.7%, 57.8%, 1);
   --f-70: 4.375rem;
   --f-50: 3.125rem;
   --f-40: 2.5rem;
@@ -727,7 +729,7 @@ pre {
       font-size: 40px; } }
 
 .error-message {
-  background-color: #e74040;
+  background-color: var(--color-danger);
   border-radius: 30px;
   display: inline-block;
   margin-top: 5px;
@@ -739,10 +741,96 @@ pre {
       font-size: 14px; } }
 
 .input-error {
-  border: 2px solid #e74040;
-  color: #e74040; }
+  border: 2px solid color(--color-danger);
+  color: color(--color-danger); }
   .input-error::placeholder {
-    color: #e74040; }
+    color: color(--color-danger); }
+
+.tooltip-message {
+  position: absolute;
+  right: 0;
+  bottom: 75px;
+  width: 180px;
+  height: 90px;
+  padding: 12px;
+  color: #fff;
+  border-radius: 5px;
+  animation: showMessage 500ms; }
+  .tooltip-message::before {
+    content: "";
+    position: absolute;
+    bottom: -14px;
+    right: 14px;
+    display: block;
+    width: 16px;
+    height: 14px;
+    clip-path: polygon(0 0, 100% 0, 50% 100%); }
+    @media screen and (min-width: 1024px) {
+      .tooltip-message::before {
+        bottom: -13px; } }
+  .tooltip-message__text {
+    width: 130px;
+    height: 100%;
+    display: flex;
+    align-items: center; }
+    @media screen and (min-width: 1024px) {
+      .tooltip-message__text {
+        width: 140px;
+        font-size: 14px; } }
+  @media screen and (min-width: 768px) {
+    .tooltip-message {
+      right: 7px; } }
+  @media screen and (min-width: 1024px) {
+    .tooltip-message {
+      width: 190px;
+      height: 90px;
+      bottom: 110px;
+      right: 12px; } }
+  @media screen and (min-width: 1200px) {
+    .tooltip-message {
+      bottom: 128px;
+      right: 15px; } }
+
+@keyframes showMessage {
+  0% {
+    display: none;
+    opacity: 0; }
+  1% {
+    display: block;
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+.tooltip-message.valid {
+  background-color: var(--color-success); }
+  .tooltip-message.valid::before {
+    background-color: var(--color-success); }
+
+.tooltip-message.error {
+  background-color: var(--color-danger); }
+  .tooltip-message.error::before {
+    background-color: var(--color-danger); }
+
+.tooltip-close {
+  background-color: var(--color-light);
+  position: absolute;
+  top: 8%;
+  left: 82%;
+  display: block;
+  width: 27px;
+  height: 27px;
+  border-radius: 50%;
+  font-size: 20px;
+  font-style: normal;
+  text-align: center;
+  line-height: 27px;
+  cursor: pointer; }
+
+.tooltip-close.close-valid {
+  color: var(--color-success); }
+
+.tooltip-close.close-error {
+  color: var(--color-danger); }
 
 .intro-location {
   width: 100%;

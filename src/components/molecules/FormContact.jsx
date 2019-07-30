@@ -21,6 +21,7 @@ class FormContact extends React.Component {
             name: null,
             email: null,
             message: null,
+            tooltipMessage: "waiting...",
             errors: {}
         }
     }
@@ -53,15 +54,27 @@ class FormContact extends React.Component {
         })
     }
 
+    handleTooltipMessage = e => {
+        this.setState({
+            tooltipMessage: "waiting..."
+        })
+    }
+
     handleSubmit = e => {
         e.preventDefault()
         if (validateForm(this.state)) {
             console.log('Todo bien, todo correcto y yo que me alegro')
+            this.setState({
+                tooltipMessage: "valid"
+            })
             return
         }
         console.log('formulario invalido')
         let { errors, ...rest } = this.state
         let { name, email, message } = rest
+        this.setState({
+            tooltipMessage: "error"
+        })
         if (name === null && email === null && message === null) {
             this.setState({
                 errors: {
@@ -125,6 +138,19 @@ class FormContact extends React.Component {
                         value="send"
 
                     />
+                    {this.state.tooltipMessage === "valid"
+                        ? <span className="tooltip-message valid">
+                            <i className="tooltip-close close-valid f-icon" onClick={this.handleTooltipMessage}>close</i>
+                            <p className="tooltip-message__text message-success f-13">Mensaje enviado :)</p>
+                        </span>
+                        : null}
+
+                    {this.state.tooltipMessage === "error"
+                        ? <span className="tooltip-message error ">
+                            <i className="tooltip-close close-error f-icon" onClick={this.handleTooltipMessage}>close</i>
+                            <p className="tooltip-message__text message-error  f-13">Por favor, corrige los campos para enviar tu mensaje :(</p>
+                        </span>
+                        : null}
                 </div>
                 {errors.message && <span className="error-message">{errors.message}</span>}
             </form>

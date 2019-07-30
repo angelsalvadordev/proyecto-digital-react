@@ -79,7 +79,7 @@ pre{
 }
 
 .error-message{
-    background-color: rgb(231, 64, 64);
+    background-color: var(--color-danger);
     border-radius: 30px;
     display: inline-block;
     margin-top: 5px;
@@ -92,10 +92,111 @@ pre{
 }
 
 .input-error{
-    border: 2px solid rgb(231, 64, 64);
-    color: rgb(231, 64, 64);
+    border: 2px solid color(--color-danger);
+    color: color(--color-danger);
 
     &::placeholder{
-        color: rgb(231, 64, 64);
+        color: color(--color-danger);
     }
+}
+
+.tooltip-message{
+    position: absolute;
+    right: 0;
+    bottom: 75px;
+    width: 180px;
+    height: 90px;
+    padding: 12px;
+    color: #fff;
+    border-radius: 5px;
+    animation: showMessage 500ms;
+
+    &::before{
+        content:"";
+        position: absolute;
+        bottom:-14px;
+        right:14px;
+        display: block;
+        width: 16px;
+        height: 14px;
+        clip-path: polygon(0 0, 100% 0, 50% 100%);
+
+        @include from(laptop){
+            bottom:-13px;
+        }
+    }
+
+    &__text{
+        width: 130px;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        
+        @include from(laptop){
+            width: 140px;
+            font-size: 14px;
+        }
+    }
+
+    @include from(tablet){
+        right: 7px;
+    }
+
+    @include from(laptop){
+        width: 190px;
+        height: 90px;
+        bottom: 110px;
+        right: 12px;
+    }
+
+    @include from(desktop){
+        bottom: 128px;
+        right: 15px;
+    }
+}
+
+@keyframes showMessage{
+    0%{display: none; opacity: 0;}
+    1%{display: block; opacity: 0}
+    100%{opacity: 1;}
+}
+
+.tooltip-message.valid{
+    background-color: var(--color-success);
+
+    &::before{
+        background-color: var(--color-success);
+    }
+}
+
+.tooltip-message.error{
+    background-color: var(--color-danger);
+
+    &::before{
+        background-color: var(--color-danger);
+    }
+}
+
+.tooltip-close{
+    background-color: var(--color-light);
+    position: absolute;
+    top:8%;
+    left:82%;
+    display: block;
+    width: 27px;
+    height: 27px;
+    border-radius: 50%;
+    font-size: 20px;
+    font-style: normal;
+    text-align: center;
+    line-height: 27px;
+    cursor: pointer;
+}
+
+.tooltip-close.close-valid{
+    color: var(--color-success);
+}
+
+.tooltip-close.close-error{
+    color:var(--color-danger);
 }
