@@ -2,7 +2,7 @@ import React from 'react'
 import Button from '../atoms/Button';
 import IntroSection from '../molecules/IntroSection'
 
-const Hero = props => {
+const Hero = () => {
     return (
         <div className="main-hero flex flex-column align-items-center">
             <IntroSection
@@ -14,8 +14,8 @@ const Hero = props => {
             />
 
             <div className="hero-buttons flex">
-                <Button autoScroll={props.autoScroll} link="#portafolio" className="btn-hero btn-primary bg-secondary" name="portafolio" />
-                <Button autoScroll={props.autoScroll} link="#contacto" className="btn-hero btn-secondary" name="contactanos" />
+                <Button link="#portafolio" className="btn-hero btn-primary bg-secondary" name="portafolio" />
+                <Button link="#contacto" className="btn-hero btn-secondary" name="contactanos" />
             </div>
         </div>
     )

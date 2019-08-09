@@ -1,5 +1,6 @@
 import React from 'react'
 
+// Parte de la seccion Contacto
 const Location = () => {
     return (
         <>

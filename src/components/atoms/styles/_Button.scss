@@ -6,6 +6,7 @@
     font-weight: 400;
     text-transform: uppercase;
     letter-spacing: 1px;
+    cursor: pointer;
 
     @include from(laptop){
         font-size: $f-16;

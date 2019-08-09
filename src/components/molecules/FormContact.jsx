@@ -13,6 +13,7 @@ const validateForm = ({ errors, ...rest }) => {
     return valid
 }
 
+// Parte de la seccion Contact
 class FormContact extends React.Component {
     constructor(props) {
         super(props)

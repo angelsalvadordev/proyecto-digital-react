@@ -1,5 +1,5 @@
 import React from 'react'
-
+import PropTypes from 'prop-types'
 // Need props: image, name and parag
 const Service = props => {
 
@@ -11,6 +11,17 @@ const Service = props => {
             <span className="border-service bg-primary"></span>
         </div>
     )
+}
+
+Service.propTypes = {
+    image: PropTypes.string.isRequired,
+    name: PropTypes.string,
+    parag: PropTypes.string
+}
+
+Service.defaultProps = {
+    name: "Default Service",
+    parag: "Default Paragraph"
 }
 
 export default Service

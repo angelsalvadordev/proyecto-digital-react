@@ -1,20 +1,38 @@
-import React, { Component } from 'react'
+import React, { useState } from 'react'
 import Logo from '../atoms/Logo';
 import Burger from '../atoms/Burger';
 import Menu from '../molecules/Menu';
+import withAutoScroll from '../../hocs/withAutoScroll'
 
 const Navigation = props => {
-    return (
 
-        <div className={`main-navigation ${props.showMenu ? 'navigation-color' : ''} ${props.navigationFixed ? 'navigation-fixed' : ''}`}>
+    const [menu, setMenu] = useState(false) // Usando hooks
+
+    // Para mostrar u ocultar el menu en version movil
+    const showMenuBurger = e => {
+        e.preventDefault()
+        const showMenu = menu ? false : true
+        setMenu(showMenu)
+    }
+
+    // Para usar el autoScroll en los items del menu y ocultar el menu en moviles.
+    const selectElementMenu = e => {
+        // prop autoScroll es parte del HOC withAutoScroll
+        props.autoScroll(e)
+
+        //Ocultar menu movil
+        setMenu(false)
+    }
+
+    return (
+        <div className={`main-navigation ${menu ? 'navigation-dark' : ''} ${props.navigationFixed ? 'navigation-fixed' : ''}`}>
             <div className="main-navigation__content flex align-items-center">
-                <Logo autoScroll={props.autoScroll} resize={props.navigationFixed} />
-                <Menu showMenu={props.showMenu} autoScroll={props.autoScroll} />
-                <Burger onclick={props.showMenuBurger} />
+                <Logo resize={props.navigationFixed} />
+                <Menu autoScroll={selectElementMenu} showMenu={menu} />
+                <Burger showMenuBurger={showMenuBurger} />
             </div>
         </div>
     )
-
 }
 
-export default Navigation
+export default withAutoScroll(Navigation)

@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 const CardTestimony = props => {
     return (
         <div className="card-testimony flex justify-content-center">
@@ -18,5 +19,14 @@ const CardTestimony = props => {
         </div>
     )
 }
+
+CardTestimony.propTypes = {
+    image: PropTypes.string.isRequired
+}
+
+CardTestimony.defaultProps = {
+    image: '/images/image/not-found.png'
+}
+
 
 export default CardTestimony
