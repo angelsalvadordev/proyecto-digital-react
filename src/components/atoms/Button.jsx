@@ -6,7 +6,7 @@ import withAutoScroll from '../../hocs/withAutoScroll';
 // Props a usarse:  name, className y link
 const Button = props => (
     <a
-        href={props.link ? props.link : 'javascript: void(0)'}
+        href={props.link ? props.link : "javascript:void(0)"}
         onClick={props.autoScroll}
         className={`btn ${props.className}`}
     >{props.name}</a >

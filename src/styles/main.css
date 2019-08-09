@@ -172,7 +172,8 @@ ul {
 
 a {
   color: var(--color-light);
-  text-decoration: none; }
+  text-decoration: none;
+  cursor: pointer; }
 
 .outline {
   outline: 2px solid red; }
