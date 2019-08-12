@@ -1,4 +1,3 @@
-//Implementacin de HOC para reutilizar la logica del autoScroll
 import React from 'react'
 
 const withAutoScroll = (WrappedComponent) => {
@@ -9,33 +8,34 @@ const withAutoScroll = (WrappedComponent) => {
 
         runAutoScroll = e => {
             e.preventDefault()
-            let href = e.target.getAttribute('href')
-            // Comprobar si el link contiene un hash para
-            if (href.charAt(0) !== "#") return
+            const nameSection = e.target.getAttribute('href')
+            let sectionPosition
 
-            let section = document.querySelector(href)
+            if (nameSection.charAt(0) !== "#") return
 
-            //Primera comprobacion para saber si el usuario se encuentra en el inicio y evitar bug de redimension del navigation.
-            if (window.scrollY === 0 && section.offsetTop > 0) {
-                // Fuerza a que la navegacion tome la verdadera altura al hacer scroll de 1px para
-                // calcular el nuevo tamaño y evitar errores en el scroll.
-                window.scroll({ top: 1 })
+            sectionPosition = document.querySelector(nameSection).offsetTop
+
+            if (window.scrollY === 0 && sectionPosition > 0) {
+                this.resizeNavigation()
             }
 
-            if (section.offsetTop > 0 || href === '#inicio') {
-                // Breve retraso para calcular el verdadero tamaño de la navegacion
-                setTimeout(() => {
-                    //Nueva captura del alto de la navegacion
-                    const navSize = document.querySelector('.main-navigation').offsetHeight
-                    // Calculo del desplazamiento
-                    const rangeScroll = section.offsetTop - navSize
-                    window.scroll({
-                        top: rangeScroll,
-                        left: 0,
-                        behavior: 'smooth'
-                    })
-                }, 200);
-            }
+            this.goTo(sectionPosition)
+        }
+
+        resizeNavigation = () => {
+            window.scroll({ top: 1 })
+        }
+
+        goTo = (sectionPosition) => {
+            setTimeout(() => {
+                const navSize = document.querySelector('.main-navigation').offsetHeight
+                const rangeScroll = sectionPosition - navSize
+                window.scroll({
+                    top: rangeScroll,
+                    left: 0,
+                    behavior: 'smooth'
+                })
+            }, 200); // Para calcular el nuevo tamaño del resize despues de la animacion del elemento
         }
 
         render() {

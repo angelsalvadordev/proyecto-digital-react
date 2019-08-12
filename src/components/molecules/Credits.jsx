@@ -1,6 +1,5 @@
 import React from 'react'
 
-// Parte del footer
 const Credits = () => {
     return (
         <div className="credits f-light">

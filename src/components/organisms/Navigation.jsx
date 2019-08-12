@@ -1,35 +1,45 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import Logo from '../atoms/Logo';
 import Burger from '../atoms/Burger';
 import Menu from '../molecules/Menu';
 import withAutoScroll from '../../hocs/withAutoScroll'
 
-const Navigation = props => {
+const Navigation = ({ autoScroll }) => {
+    // Hooks
+    const [mobileMenu, setMobileMenu] = useState(false)
+    const [fixed, setFixed] = useState(false)
 
-    const [menu, setMenu] = useState(false) // Usando hooks
+    const handleFixed = () => {
+        let navFixed
+        window.scrollY > 0 ? navFixed = true : navFixed = false
+        setFixed(navFixed)
+    }
 
-    // Para mostrar u ocultar el menu en version movil
-    const showMenuBurger = e => {
+    const handleMenu = e => {
         e.preventDefault()
-        const showMenu = menu ? false : true
-        setMenu(showMenu)
+        const showMenu = mobileMenu ? false : true
+        setMobileMenu(showMenu)
     }
 
-    // Para usar el autoScroll en los items del menu y ocultar el menu en moviles.
-    const selectElementMenu = e => {
+    const autoScrollSection = e => {
         // prop autoScroll es parte del HOC withAutoScroll
-        props.autoScroll(e)
+        autoScroll(e)
 
-        //Ocultar menu movil
-        setMenu(false)
+        setMobileMenu(false)
     }
+
+    useEffect(() => {
+        document.addEventListener('scroll', () => {
+            handleFixed()
+        })
+    }, [])
 
     return (
-        <div className={`main-navigation ${menu ? 'navigation-dark' : ''} ${props.navigationFixed ? 'navigation-fixed' : ''}`}>
+        <div className={`main-navigation ${mobileMenu ? 'navigation-dark' : ''} ${fixed ? 'navigation-fixed' : null}`}>
             <div className="main-navigation__content flex align-items-center">
-                <Logo resize={props.navigationFixed} />
-                <Menu autoScroll={selectElementMenu} showMenu={menu} />
-                <Burger showMenuBurger={showMenuBurger} />
+                <Logo fixed={fixed} />
+                <Menu autoScrollSection={autoScrollSection} showMobileMenu={mobileMenu} />
+                <Burger handleMenu={handleMenu} />
             </div>
         </div>
     )

@@ -1,12 +1,11 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-// Prop "image" viene de molecules/NavPortfolio
 const CardPortfolio = props => {
     return (
         <li className="card-portfolio" >
             <a className="card-portfolio__link" href="javascript: void(0)">
-                <img className="card-portfolio__image" src={props.image} />
+                <img className="card-portfolio__image" src={props.image} alt={props.name} />
                 <div className="card-hover">
                     <span>fullscreen</span>
                     <p>ver Proyecto</p>

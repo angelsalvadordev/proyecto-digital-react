@@ -8,9 +8,6 @@
 @import './reset';
 @import './layout';
 
-// Import style components
-// Cada carpeta de componentes cuenta con su respectiva carpeta de styles y un archivo _all.scss donde se centraliza
-// los componentes de esa carpeta
 @import "../components/atoms/styles/all";
 @import "../components/molecules/styles/all";
 @import "../components/organisms/styles/all";

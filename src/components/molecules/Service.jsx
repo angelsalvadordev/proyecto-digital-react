@@ -1,6 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-// Need props: image, name and parag
+
 const Service = props => {
 
     return (

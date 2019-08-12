@@ -1,9 +1,9 @@
 import React from 'react'
 
-//showMenuBurger viene del componente organisms/Navigation
-const Burger = ({ showMenuBurger }) => {
+//showMenu viene del componente organisms/Navigation
+const Burger = ({ handleMenu }) => {
     return (
-        <a onClick={showMenuBurger} href="#" className="menu-burger f-icon f-30" id="menu-burger">menu</a>
+        <a href={undefined} onClick={handleMenu} className="menu-burger f-icon f-30" id="menu-burger">menu</a>
     )
 }
 
