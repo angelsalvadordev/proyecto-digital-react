@@ -15,6 +15,11 @@ const CardTestimony = props => {
                     <span className="f-icon f-20 f-secondary star-testimony">star_rate</span>
                     <span className="f-icon f-20 f-secondary star-testimony">star_rate</span>
                 </div>
+                <div>
+                    <svg className="card-testimony__triangle" viewBox="0 0 100 100" preserveAspectRatio="none" fill="white">
+                        <polygon points="100 0 100 100 0 0"></polygon>
+                    </svg>
+                </div>
             </div>
         </div>
     )

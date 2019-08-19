@@ -4,33 +4,28 @@
     width: 314px;
     justify-content: space-between;
 
-    &__bg{
-        border-radius: 10px;
-        width: 270px;
-        padding: 12px 22px;
-        position: relative;
-        box-shadow: 0 3px 6px hsla(0,0,0,.16);
-
-        &::before{
-            content:'';
-            background-color: var(--color-light);
-            width: 30px;
-            height: 38px;
-            position: absolute;
-            top: 64px;
-            left:-29px;
-            clip-path: polygon(0% 0%,100% 0, 100% 100%);
-            box-shadow: 0 3px 6px hsla(0,0,0,.16);
-        }
-
-    }
-
     &__image{
         width: 40px;
         height: 40px;
         border-radius: 50%;
         object-fit: cover;
         margin-top: 14px;
+    }
+
+    &__bg{
+        border-radius: 10px;
+        width: 270px;
+        padding: 12px 22px;
+        position: relative;
+        box-shadow: 0 3px 6px hsla(0,0,0,.16);
+    }
+
+    &__triangle{
+        position: absolute;
+        width: 30px;
+        height: 38px;
+        top: 64px;
+        left: -29px;
     }
 
     @include from(tablet){
@@ -42,21 +37,21 @@
         margin-right: auto;
         width: 490px;
 
-        &__bg{
-            width: 384px;
-            
-            &::before{
-                width: 47px;
-                height: 62px;
-                top: 100px;
-                left:-47px;
-            }
-        }
-
         &__image{
             width: 92px;
             height: 92px;
             margin-top: 0;
+        }
+
+        &__bg{
+            width: 384px;
+        }
+
+        &__triangle{
+            width: 47px;
+            height: 62px;
+            top: 100px;
+            left: -47px;
         }
 
         &__name{
@@ -79,9 +74,11 @@
         &__bg{
             width: 437px;
         }
-        &__bg::before{
-            left:-46px;
+
+        &__triangle{
+            left: -46px;
         }
+
         &__parag{
             font-size: 18px;
         }

@@ -278,28 +278,24 @@ a {
   margin-right: auto;
   width: 314px;
   justify-content: space-between; }
-  .card-testimony__bg {
-    border-radius: 10px;
-    width: 270px;
-    padding: 12px 22px;
-    position: relative;
-    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16); }
-    .card-testimony__bg::before {
-      content: '';
-      background-color: var(--color-light);
-      width: 30px;
-      height: 38px;
-      position: absolute;
-      top: 64px;
-      left: -29px;
-      clip-path: polygon(0% 0%, 100% 0, 100% 100%);
-      box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16); }
   .card-testimony__image {
     width: 40px;
     height: 40px;
     border-radius: 50%;
     object-fit: cover;
     margin-top: 14px; }
+  .card-testimony__bg {
+    border-radius: 10px;
+    width: 270px;
+    padding: 12px 22px;
+    position: relative;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16); }
+  .card-testimony__triangle {
+    position: absolute;
+    width: 30px;
+    height: 38px;
+    top: 64px;
+    left: -29px; }
   @media screen and (min-width: 768px) {
     .card-testimony {
       margin-left: 20px; } }
@@ -308,17 +304,17 @@ a {
       margin-left: auto;
       margin-right: auto;
       width: 490px; }
-      .card-testimony__bg {
-        width: 384px; }
-        .card-testimony__bg::before {
-          width: 47px;
-          height: 62px;
-          top: 100px;
-          left: -47px; }
       .card-testimony__image {
         width: 92px;
         height: 92px;
         margin-top: 0; }
+      .card-testimony__bg {
+        width: 384px; }
+      .card-testimony__triangle {
+        width: 47px;
+        height: 62px;
+        top: 100px;
+        left: -47px; }
       .card-testimony__name {
         font-size: 30px; }
       .card-testimony__company {
@@ -331,7 +327,7 @@ a {
       width: 540px; }
       .card-testimony__bg {
         width: 437px; }
-      .card-testimony__bg::before {
+      .card-testimony__triangle {
         left: -46px; }
       .card-testimony__parag {
         font-size: 18px; } }
